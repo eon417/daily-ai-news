@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily AI news</title>
+<style>
+  :root{
+    --bg:#F5F6F8;--surface:#FFFFFF;--elevated:#EEF1F5;--accent:#0C7FB8;
+    --text:#1A1D24;--muted:#5B6472;--faint:#9AA3B2;--border:#D9DEE6;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#1A1D24;--surface:#22262F;--elevated:#2C313B;--accent:#7DD3FC;
+    --text:#E6E9EF;--muted:#9AA3B2;--faint:#5B6472;--border:#333A47;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#1A1D24;--surface:#22262F;--elevated:#2C313B;--accent:#7DD3FC;
+    --text:#E6E9EF;--muted:#9AA3B2;--faint:#5B6472;--border:#333A47;
+  }
+  :root[data-theme="light"]{
+    --bg:#F5F6F8;--surface:#FFFFFF;--elevated:#EEF1F5;--accent:#0C7FB8;
+    --text:#1A1D24;--muted:#5B6472;--faint:#9AA3B2;--border:#D9DEE6;
+  }
+  .ai-wrap *{box-sizing:border-box}
+  .ai-wrap{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;
+    max-width:820px;margin:0 auto;padding:32px 20px 80px;-webkit-font-smoothing:antialiased;}
+  .ai-wrap h1{font-size:26px;font-weight:500;margin:0 0 6px;letter-spacing:-0.01em;text-wrap:balance;}
+  .ai-date{font-family:var(--mono);color:var(--accent);font-size:14px;}
+  .ai-meta{color:var(--muted);font-size:13px;margin-top:10px;}
+  .day{border-top:2px solid var(--border);margin-top:44px;padding-top:20px;}
+  .day:first-of-type{border-top:none;margin-top:22px;}
+  .day-label{font-family:var(--mono);font-size:15px;color:var(--accent);font-weight:500;margin:0 0 4px;}
+  .sec-head{font-size:15px;font-weight:600;color:var(--text);margin:26px 0 4px;
+    border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .cat-head{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--faint);
+    margin:22px 0 12px;font-family:var(--mono);}
+  .item{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+    padding:18px 20px;margin-bottom:14px;}
+  .item-top{display:flex;align-items:flex-start;gap:12px;justify-content:space-between;}
+  .rank{font-family:var(--mono);color:var(--accent);font-size:13px;font-weight:500;
+    background:var(--elevated);border-radius:6px;padding:2px 8px;flex:0 0 auto;line-height:1.5;}
+  .item h2{font-size:17px;font-weight:500;margin:0;line-height:1.35;overflow-wrap:anywhere;}
+  .item h2 a{color:inherit;text-decoration:none;}
+  .item h2 a:hover{color:var(--accent);}
+  .score{flex:0 0 auto;font-family:var(--mono);font-size:13px;color:var(--muted);white-space:nowrap;}
+  .score .dot{color:var(--accent);letter-spacing:1px}
+  .score .off{color:var(--faint);letter-spacing:1px}
+  .summary{color:var(--text);margin:12px 0 0;font-size:14.5px;}
+  .points{margin:12px 0 0;padding:0 0 0 18px;color:var(--muted);font-size:13.5px;}
+  .points li{margin:3px 0;overflow-wrap:anywhere}
+  .foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:14px;
+    padding-top:12px;border-top:1px solid var(--border);font-size:12.5px;}
+  .src a{color:var(--accent);text-decoration:none;font-family:var(--mono);overflow-wrap:anywhere;}
+  .src a:hover{text-decoration:underline}
+  .kw{display:flex;flex-wrap:wrap;gap:6px;margin-left:auto}
+  .kw span{font-family:var(--mono);font-size:11.5px;color:var(--muted);background:var(--elevated);
+    border-radius:5px;padding:2px 7px;white-space:nowrap;}
+  .ai-foot{margin-top:40px;padding-top:20px;border-top:1px solid var(--border);color:var(--faint);
+    font-size:12px;font-family:var(--mono);line-height:1.7;}
+  @media (max-width:520px){.ai-wrap{padding:24px 14px 60px}.item-top{flex-wrap:wrap}
+    .score{width:100%;order:3}.kw{margin-left:0}}
+</style>
+</head>
+<body>
+<div class="ai-wrap">
+  <h1>Daily AI news</h1>
+  <div class="ai-date">2026-07-10 · rolling 3-day window</div>
+  <div class="ai-meta">Focus: Anthropic · OpenAI · Gemini · Grok. Newest day first; days older than 3 are dropped automatically.</div>
+  <section class="day">
+  <div class="day-label">2026-07-10</div>
+  <div class="sec-head">AI industry</div>
+  <div class="cat-head">Anthropic / Claude</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">01</span>
+      <h2><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Claude Sonnet 5 launched</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">Anthropic released Claude Sonnet 5 (claude-sonnet-5) with a 1M-token context window and 128k max output, at introductory pricing through Aug 31. Adaptive thinking is now default and a new tokenizer produces ~30% more tokens for the same text.</p>
+    <ul class="points">
+      <li>1M context, 128k output; frontier coding/agent performance</li>
+      <li>Adaptive thinking default; manual extended-thinking removed</li>
+      <li>New tokenizer ≈ +30% tokens — watch cost/limits</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">www.anthropic.com/news/claude-sonnet-5</a></span>
+      <div class="kw"><span>model-release</span><span>pricing</span><span>tokenizer</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">02</span>
+      <h2><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Fable 5 &amp; Mythos 5 restored to service</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Claude Fable 5 and Mythos 5 access restored after a brief suspension, redeployed globally with an industry jailbreak-severity framework co-developed with Amazon, Microsoft and Google.</p>
+    <ul class="points">
+      <li>Fable 5 / Mythos 5 back in production</li>
+      <li>Cross-vendor jailbreak severity standard</li>
+      <li>Mythos 5 for Project Glasswing participants</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">www.anthropic.com/news/redeploying-fable-5</a></span>
+      <div class="kw"><span>model-availability</span><span>security</span><span>incident</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">03</span>
+      <h2><a href="https://docs.anthropic.com/en/release-notes/overview" target="_blank" rel="noopener">API rate limits unified, tiers consolidated</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Claude API rate limits raised across models — Sonnet and Haiku now match Opus at every tier. Usage tiers consolidated to three: Start, Build, Scale. No org receives lower limits than before.</p>
+    <ul class="points">
+      <li>Sonnet/Haiku limits now match Opus</li>
+      <li>Three tiers: Start / Build / Scale</li>
+      <li>No action required; check Console</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://docs.anthropic.com/en/release-notes/overview" target="_blank" rel="noopener">docs.anthropic.com/en/release-notes/overview</a></span>
+      <div class="kw"><span>rate-limits</span><span>api-change</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">04</span>
+      <h2><a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener">Claude Science workbench</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">A customizable interface for researchers integrating common scientific tools and packages, with auditable artifacts for reproducible research.</p>
+    <ul class="points">
+      <li>Research-tailored interface</li>
+      <li>Integrated science tooling</li>
+      <li>Auditable, reproducible artifacts</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener">www.anthropic.com/news/claude-science-ai-workbench</a></span>
+      <div class="kw"><span>product</span><span>research</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">05</span>
+      <h2><a href="https://status.anthropic.com" target="_blank" rel="noopener">Status: July error-spike cluster + Claude Code Web degradation</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">Multiple brief error elevations across Opus 4.8, Fable 5, Mythos 5 and Sonnet 5 through Jul 1–9 (all resolved &lt;1h). Claude Code on Web / Cowork Remote saw performance degradation Jul 8 plus an MCP auth issue, all restored — the kind of usage-limit / availability blips users notice day to day.</p>
+    <ul class="points">
+      <li>15+ short error incidents, all resolved &lt;1h</li>
+      <li>Claude Code Web + Cowork Remote degraded Jul 8</li>
+      <li>MCP Server authorization issue (resolved)</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://status.anthropic.com" target="_blank" rel="noopener">status.anthropic.com</a></span>
+      <div class="kw"><span>incident</span><span>availability</span><span>usage</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">06</span>
+      <h2><a href="https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/" target="_blank" rel="noopener">Aggregator: new Claude feature &#x27;quietly selling you on AI&#x27; (TechCrunch)</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">TechCrunch reports on a new Claude feature framed as subtly nudging users toward broader AI adoption inside the product experience.</p>
+    <ul class="points">
+      <li>Journalistic take on a new Claude feature</li>
+      <li>Focus on adoption / persuasion design</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/" target="_blank" rel="noopener">techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai</a></span>
+      <div class="kw"><span>claude</span><span>commentary</span></div>
+    </div>
+  </article>
+  <div class="cat-head">OpenAI / ChatGPT</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">07</span>
+      <h2><a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/" target="_blank" rel="noopener">GPT-5.6 family: Luna, Terra, Sol</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">OpenAI released its GPT-5.6 flagship in three sizes with distinct pricing and tool-use performance, its biggest model-line update since GPT-5.x.</p>
+    <ul class="points">
+      <li>Three-tier flagship family</li>
+      <li>New pricing + tool-use benchmarks</li>
+      <li>Successor to GPT-5.x line</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/" target="_blank" rel="noopener">simonwillison.net/2026/Jul/9/gpt-5-6</a></span>
+      <div class="kw"><span>model-release</span><span>gpt-5.6</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">08</span>
+      <h2><a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/" target="_blank" rel="noopener">GPT-Live voice mode</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">OpenAI upgraded ChatGPT voice with a new model that delegates complex tasks to GPT-5.5 mid-conversation while keeping the dialogue flowing.</p>
+    <ul class="points">
+      <li>New real-time voice model</li>
+      <li>Delegates hard tasks to GPT-5.5</li>
+      <li>Continuous conversation flow</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/" target="_blank" rel="noopener">simonwillison.net/2026/Jul/8/introducing-gptlive</a></span>
+      <div class="kw"><span>voice</span><span>chatgpt</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">09</span>
+      <h2><a href="https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/" target="_blank" rel="noopener">Fidji Simo steps down from No. 2 role</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Fidji Simo departs her position as OpenAI&#x27;s number two, a significant leadership transition.</p>
+    <ul class="points">
+      <li>Fidji Simo leaves #2 role</li>
+      <li>Major leadership change</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/" target="_blank" rel="noopener">techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role</a></span>
+      <div class="kw"><span>leadership</span><span>corporate</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">10</span>
+      <h2><a href="https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/" target="_blank" rel="noopener">Atlas browser shut down</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">OpenAI discontinues its Atlas browser while signaling continued ambitions in browser-based AI.</p>
+    <ul class="points">
+      <li>Atlas project discontinued</li>
+      <li>Browser-AI ambitions continue</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/" target="_blank" rel="noopener">techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing</a></span>
+      <div class="kw"><span>product</span><span>browser</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">11</span>
+      <h2><a href="https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/" target="_blank" rel="noopener">NYT: OpenAI hid evidence in copyright trial</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">The New York Times alleges OpenAI concealed evidence during copyright litigation over ChatGPT training data.</p>
+    <ul class="points">
+      <li>NYT alleges hidden evidence</li>
+      <li>Ongoing training-data copyright case</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/" target="_blank" rel="noopener">techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial</a></span>
+      <div class="kw"><span>legal</span><span>copyright</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">12</span>
+      <h2><a href="https://status.openai.com" target="_blank" rel="noopener">Status: FedRAMP workspaces degraded</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">OpenAI&#x27;s FedRAMP compliance workspaces saw ongoing degradation across Codex, analytics, search and compliance-log downloads — impacting enterprise compliance users.</p>
+    <ul class="points">
+      <li>FedRAMP workspace feature disruption</li>
+      <li>Codex, analytics, compliance logs affected</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://status.openai.com" target="_blank" rel="noopener">status.openai.com</a></span>
+      <div class="kw"><span>incident</span><span>enterprise</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Google Gemini / DeepMind</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">13</span>
+      <h2><a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">Gemini Omni Flash public preview (video gen)</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">High-performance multimodal model in public preview: generates 3–10s 720p video from text or animates stills with conversational editing.</p>
+    <ul class="points">
+      <li>Text-to-video 3–10s at 720p</li>
+      <li>Still-image animation</li>
+      <li>Conversational editing</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">ai.google.dev/gemini-api/docs/changelog</a></span>
+      <div class="kw"><span>video-gen</span><span>multimodal</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">14</span>
+      <h2><a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">Computer Use tool preview (Gemini 3.5 Flash)</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">Public preview of a Computer Use tool letting agents act across browser, mobile and desktop via simplified intent-based actions.</p>
+    <ul class="points">
+      <li>Agent automation across environments</li>
+      <li>Intent-based simplified actions</li>
+      <li>Browser/mobile/desktop</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">ai.google.dev/gemini-api/docs/changelog</a></span>
+      <div class="kw"><span>computer-use</span><span>agents</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">15</span>
+      <h2><a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">Nano Banana 2 Lite GA</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">gemini-3.1-flash-lite-image reaches general availability — ultra-low-latency, cost-effective image generation and editing.</p>
+    <ul class="points">
+      <li>Low-latency image model GA</li>
+      <li>Cost-effective generation/editing</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">ai.google.dev/gemini-api/docs/changelog</a></span>
+      <div class="kw"><span>image-gen</span><span>model-release</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">16</span>
+      <h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/" target="_blank" rel="noopener">Gemini 3.5 Live Translate</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Real-time, natural-sounding voice translation across conversations powered by Gemini 3.5.</p>
+    <ul class="points">
+      <li>Real-time voice translation</li>
+      <li>Natural speech output</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/" target="_blank" rel="noopener">blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate</a></span>
+      <div class="kw"><span>translation</span><span>voice</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">17</span>
+      <h2><a href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" target="_blank" rel="noopener">DeepMind: securing the future of AI agents</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">DeepMind research on safety frameworks and security measures for increasingly autonomous AI agents.</p>
+    <ul class="points">
+      <li>Agent safety frameworks</li>
+      <li>Autonomous-system reliability</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" target="_blank" rel="noopener">deepmind.google/blog/securing-the-future-of-ai-agents</a></span>
+      <div class="kw"><span>safety</span><span>agents</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">18</span>
+      <h2><a href="https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/" target="_blank" rel="noopener">Google to disclose AI-generated ads</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Google will require disclosure of AI-generated advertising content as a transparency measure.</p>
+    <ul class="points">
+      <li>AI-ad disclosure policy</li>
+      <li>Transparency initiative</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/" target="_blank" rel="noopener">techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai</a></span>
+      <div class="kw"><span>policy</span><span>ads</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">19</span>
+      <h2><a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">Changelog roundup: TTS streaming, dev logs</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Minor Gemini API updates: streaming for gemini-3.1-flash-tts-preview, and Interactions API logs now viewable in the AI Studio dashboard.</p>
+    <ul class="points">
+      <li>Streaming TTS support</li>
+      <li>Interactions API dashboard logs</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">ai.google.dev/gemini-api/docs/changelog</a></span>
+      <div class="kw"><span>api-update</span><span>minor</span></div>
+    </div>
+  </article>
+  <div class="cat-head">xAI / Grok</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">20</span>
+      <h2><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/" target="_blank" rel="noopener">Grok 4.5 released — &#x27;Opus-class&#x27;</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">xAI unveiled Grok 4.5, which Elon Musk characterizes as performance-equivalent to top enterprise-grade models. (xAI news + docs pages returned 403/404; item via TechCrunch.)</p>
+    <ul class="points">
+      <li>Grok 4.5 announced</li>
+      <li>Positioned as Opus-class</li>
+      <li>Enterprise-grade target</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/" target="_blank" rel="noopener">techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model</a></span>
+      <div class="kw"><span>model-release</span><span>grok</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Other AI industry</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">21</span>
+      <h2><a href="https://simonwillison.net/2026/Jul/9/muse-spark-1-1/" target="_blank" rel="noopener">Meta Muse Spark 1.1</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Meta&#x27;s updated model ships an API with improved agentic tool-calling, entering the crowded AI coding market.</p>
+    <ul class="points">
+      <li>Muse Spark 1.1 + API</li>
+      <li>Better agentic tool calling</li>
+      <li>AI coding competition</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://simonwillison.net/2026/Jul/9/muse-spark-1-1/" target="_blank" rel="noopener">simonwillison.net/2026/Jul/9/muse-spark-1-1</a></span>
+      <div class="kw"><span>meta</span><span>coding</span></div>
+    </div>
+  </article>
+  <div class="sec-head">General tech</div>
+  <div class="cat-head">AI / ML</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">22</span>
+      <h2><a href="https://huggingface.co/papers/2607.03118" target="_blank" rel="noopener">Vidu S1: real-time interactive video generation</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">Tsinghua&#x27;s real-time interactive video generation model, a highly-voted HF paper indicating strong interest in practical video synthesis.</p>
+    <ul class="points">
+      <li>Real-time video generation</li>
+      <li>Interactive creation</li>
+      <li>Production-ready perf</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2607.03118" target="_blank" rel="noopener">huggingface.co/papers/2607.03118</a></span>
+      <div class="kw"><span>video-gen</span><span>diffusion</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">23</span>
+      <h2><a href="https://github.com/JustVugg/colibri" target="_blank" rel="noopener">GLM 5.2 on slow hardware (colibri)</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Optimization techniques to run GLM 5.2 on resource-constrained machines via quantization and inference tuning.</p>
+    <ul class="points">
+      <li>LLM on low-end hardware</li>
+      <li>GLM 5.2 inference tuning</li>
+      <li>Access to frontier models</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://github.com/JustVugg/colibri" target="_blank" rel="noopener">github.com/JustVugg/colibri</a></span>
+      <div class="kw"><span>llm</span><span>inference</span><span>edge</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">24</span>
+      <h2><a href="https://huggingface.co/papers/2607.08768" target="_blank" rel="noopener">UniClawBench: benchmark for proactive agents</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">HKU benchmark standardizing evaluation of proactive agents on real-world tasks.</p>
+    <ul class="points">
+      <li>Proactive-agent benchmarking</li>
+      <li>Real-world task eval</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2607.08768" target="_blank" rel="noopener">huggingface.co/papers/2607.08768</a></span>
+      <div class="kw"><span>agents</span><span>benchmark</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Hard tech</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">25</span>
+      <h2><a href="https://github.com/malisper/pgrust" target="_blank" rel="noopener">Postgres rewritten in Rust — passes 100% of regression tests</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">A full Rust rewrite of PostgreSQL passes every regression test, showing a memory-safe reimplementation with perfect backward compatibility.</p>
+    <ul class="points">
+      <li>100% regression pass</li>
+      <li>Full Postgres compatibility</li>
+      <li>Memory-safe DB</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://github.com/malisper/pgrust" target="_blank" rel="noopener">github.com/malisper/pgrust</a></span>
+      <div class="kw"><span>postgres</span><span>rust</span><span>database</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">26</span>
+      <h2><a href="https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/" target="_blank" rel="noopener">Interview: Mitchell Hashimoto on Ghostty and Zig</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Ghostty&#x27;s creator on using Zig for systems programming and terminal-emulator design trade-offs.</p>
+    <ul class="points">
+      <li>Zig systems patterns</li>
+      <li>Terminal emulator design</li>
+      <li>Language trade-offs</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/" target="_blank" rel="noopener">alexalejandre.com/programming/interview-with-mitchell-hashimoto</a></span>
+      <div class="kw"><span>zig</span><span>terminal</span></div>
+    </div>
+  </article>
+  </section>
+  <div class="ai-foot">Daily News Report v3.1 (AI focus) · rolling 3-day window · latest 2026-07-10<br>
+    Sources: Anthropic, OpenAI, Gemini/DeepMind, xAI, TechCrunch AI, The Verge AI, Simon Willison, Hacker News, HuggingFace</div>
+</div>
+</body>
+</html>
