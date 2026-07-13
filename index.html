@@ -23,21 +23,34 @@
     --bg:#F5F6F8;--surface:#FFFFFF;--elevated:#EEF1F5;--accent:#0C7FB8;
     --text:#1A1D24;--muted:#5B6472;--faint:#9AA3B2;--border:#D9DEE6;
   }
+  html,body{margin:0;padding:0;background:var(--bg);}
   .ai-wrap *{box-sizing:border-box}
   .ai-wrap{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;
     max-width:820px;margin:0 auto;padding:32px 20px 80px;-webkit-font-smoothing:antialiased;}
-  .ai-wrap h1{font-size:26px;font-weight:500;margin:0 0 6px;letter-spacing:-0.01em;text-wrap:balance;}
+  .ai-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+  .ai-wrap h1{font-size:26px;font-weight:500;margin:0;letter-spacing:-0.01em;}
   .ai-date{font-family:var(--mono);color:var(--accent);font-size:14px;}
-  .ai-meta{color:var(--muted);font-size:13px;margin-top:10px;}
-  .day{border-top:2px solid var(--border);margin-top:44px;padding-top:20px;}
-  .day:first-of-type{border-top:none;margin-top:22px;}
-  .day-label{font-family:var(--mono);font-size:15px;color:var(--accent);font-weight:500;margin:0 0 4px;}
+  .ai-meta{color:var(--muted);font-size:13px;margin-top:8px;}
+  .tabbar{position:sticky;top:0;z-index:10;display:flex;gap:6px;background:var(--bg);
+    padding:12px 0 0;margin-top:20px;border-bottom:1px solid var(--border);
+    overflow-x:auto;scrollbar-width:none;}
+  .tabbar::-webkit-scrollbar{display:none}
+  .tab{font-family:var(--mono);font-size:13px;color:var(--muted);background:transparent;
+    border:none;border-bottom:2px solid transparent;padding:8px 14px 10px;cursor:pointer;
+    line-height:1.4;white-space:nowrap;flex:0 0 auto;}
+  .tab:hover{color:var(--text);background:var(--elevated);}
+  .tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent);font-weight:500;}
+  .tab .n{color:var(--faint);margin-left:7px;font-size:12px;}
+  .tab[aria-selected="true"] .n{color:var(--muted);}
+  .day{margin-top:24px;}
+  .day-sum{font-family:var(--mono);font-size:12.5px;color:var(--faint);margin:0 0 4px;}
   .sec-head{font-size:15px;font-weight:600;color:var(--text);margin:26px 0 4px;
     border-bottom:1px solid var(--border);padding-bottom:8px;}
   .cat-head{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--faint);
     margin:22px 0 12px;font-family:var(--mono);}
   .item{background:var(--surface);border:1px solid var(--border);border-radius:10px;
-    padding:18px 20px;margin-bottom:14px;}
+    padding:18px 20px;margin-bottom:14px;transition:border-color .15s ease;}
+  .item:hover{border-color:var(--faint);}
   .item-top{display:flex;align-items:flex-start;gap:12px;justify-content:space-between;}
   .rank{font-family:var(--mono);color:var(--accent);font-size:13px;font-weight:500;
     background:var(--elevated);border-radius:6px;padding:2px 8px;flex:0 0 auto;line-height:1.5;}
@@ -65,11 +78,15 @@
 </head>
 <body>
 <div class="ai-wrap">
-  <h1>Daily AI news</h1>
-  <div class="ai-date">2026-07-13 · rolling 3-day window</div>
-  <div class="ai-meta">Focus: Anthropic · OpenAI · Gemini · Grok. Newest day first; days older than 3 are dropped automatically.</div>
-  <section class="day">
-  <div class="day-label">2026-07-13</div>
+  <div class="ai-head"><h1>Daily AI news</h1><span class="ai-date">2026-07-13</span></div>
+  <div class="ai-meta">Focus: Anthropic · OpenAI · Gemini · Grok. One tab per day; days older than 3 are dropped automatically.</div>
+  <div class="tabbar" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" aria-controls="day-2026-07-13">2026-07-13<span class="n">55</span></button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-07-11">2026-07-11<span class="n">53</span></button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-07-10">2026-07-10<span class="n">26</span></button>
+  </div>
+  <section class="day" id="day-2026-07-13" role="tabpanel">
+  <p class="day-sum">39 AI industry · 16 general tech</p>
   <div class="sec-head">AI industry</div>
   <div class="cat-head">Anthropic / Claude</div>
   <article class="item">
@@ -1016,8 +1033,8 @@
     </div>
   </article>
   </section>
-  <section class="day">
-  <div class="day-label">2026-07-11</div>
+  <section class="day" id="day-2026-07-11" role="tabpanel" hidden>
+  <p class="day-sum">38 AI industry · 15 general tech</p>
   <div class="sec-head">AI industry</div>
   <div class="cat-head">Anthropic / Claude</div>
   <article class="item">
@@ -1916,8 +1933,8 @@
     </div>
   </article>
   </section>
-  <section class="day">
-  <div class="day-label">2026-07-10</div>
+  <section class="day" id="day-2026-07-10" role="tabpanel" hidden>
+  <p class="day-sum">21 AI industry · 5 general tech</p>
   <div class="sec-head">AI industry</div>
   <div class="cat-head">Anthropic / Claude</div>
   <article class="item">
@@ -2359,8 +2376,21 @@
     </div>
   </article>
   </section>
-  <div class="ai-foot">Daily News Report v3.1 (AI focus) · rolling 3-day window · latest 2026-07-13<br>
+  <div class="ai-foot">Daily News Report v3.2 (AI focus) · rolling 3-day window · latest 2026-07-13<br>
     Sources: Anthropic, OpenAI, Gemini/DeepMind, xAI, TechCrunch AI, The Verge AI, Simon Willison, Hacker News, HuggingFace</div>
 </div>
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.day'));
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      tabs.forEach(function(x){ x.setAttribute('aria-selected', String(x === t)); });
+      panels.forEach(function(p){ p.hidden = (p.id !== t.getAttribute('aria-controls')); });
+      window.scrollTo({top: 0});
+    });
+  });
+})();
+</script>
 </body>
 </html>
