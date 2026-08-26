@@ -78,14 +78,601 @@
 </head>
 <body>
 <div class="ai-wrap">
-  <div class="ai-head"><h1>Daily AI news</h1><span class="ai-date">2026-08-24</span></div>
+  <div class="ai-head"><h1>Daily AI news</h1><span class="ai-date">2026-08-26</span></div>
   <div class="ai-meta">Focus: Anthropic · OpenAI · Gemini · Grok. One tab per day; days older than 3 are dropped automatically.</div>
   <div class="tabbar" role="tablist">
-    <button class="tab" role="tab" aria-selected="true" aria-controls="day-2026-08-24">2026-08-24<span class="n">30</span></button>
+    <button class="tab" role="tab" aria-selected="true" aria-controls="day-2026-08-26">2026-08-26<span class="n">35</span></button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-08-24">2026-08-24<span class="n">30</span></button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-08-23">2026-08-23<span class="n">30</span></button>
-    <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-08-21">2026-08-21<span class="n">29</span></button>
   </div>
-  <section class="day" id="day-2026-08-24" role="tabpanel">
+  <section class="day" id="day-2026-08-26" role="tabpanel">
+  <p class="day-sum">25 AI industry · 10 general tech</p>
+  <div class="sec-head">AI industry</div>
+  <div class="cat-head">Anthropic / Claude</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">01</span>
+      <h2><a href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank" rel="noopener">Claude memory now works across chat and Cowork in the cloud</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Aug 25 Claude apps release note: memory is shared between Claude chat and Cowork in the cloud, so Cowork finally recalls what you told the chat app. Memory items are managed through a Topics view in Settings with edit/delete controls, plus a toggle for whether sensitive topics (e.g. health) stay excluded from memory by default.</p>
+    <ul class="points">
+      <li>memory shared across chat and Cowork in cloud</li>
+      <li>Topics UI in Settings to edit/delete memory items</li>
+      <li>opt-in toggle for sensitive-topic capture, excluded by default</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank" rel="noopener">support.claude.com/en/articles/12138966-release-notes</a></span>
+      <div class="kw"><span>memory</span><span>cowork</span><span>claude-apps</span><span>privacy</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">02</span>
+      <h2><a href="https://www.anthropic.com/news/wellbeing-research-grants" target="_blank" rel="noopener">Anthropic funds grants for better evaluations of AI&#x27;s impact on wellbeing</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Anthropic announced research grants (Aug 25) aimed at improving how the field measures AI&#x27;s effect on human wellbeing — funding evaluation methodology rather than capability work.</p>
+    <ul class="points">
+      <li>grant program targets wellbeing-evaluation methodology</li>
+      <li>measurement gap framed as blocker for responsible deployment</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://www.anthropic.com/news/wellbeing-research-grants" target="_blank" rel="noopener">www.anthropic.com/news/wellbeing-research-grants</a></span>
+      <div class="kw"><span>wellbeing</span><span>evaluations</span><span>research-grants</span><span>safety</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">03</span>
+      <h2><a href="https://status.claude.com/" target="_blank" rel="noopener">Aug 24 Claude incidents: elevated model errors plus two login outages</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">Claude status logged three resolved incidents on Aug 24: elevated errors on requests to Claude Opus 5, Fable 5, Mythos 5 and Opus 4.8 from 21:50 PT to 00:36 PT, plus two short Claude.ai authentication failures (09:02-09:08 PT and 13:00-13:08 PT) that also broke Claude Code subscription connections. Aug 25 and Aug 26 are clean so far.</p>
+    <ul class="points">
+      <li>~2h45m elevated error window across Opus 5 / Fable 5 / Mythos 5 / Opus 4.8</li>
+      <li>two brief Claude.ai login failures, Claude Code subscription auth affected</li>
+      <li>no incidents reported Aug 25-26</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://status.claude.com/" target="_blank" rel="noopener">status.claude.com</a></span>
+      <div class="kw"><span>outage</span><span>status</span><span>auth</span><span>opus-5</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">04</span>
+      <h2><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Claude Code 2.1.246: Loops usage breakdown, prompt cache TTL config, Bash wildcard warnings</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">Recent Claude Code point releases: 2.1.246 adds startup warnings for Bash wildcard rules, an Auto mode tab showing classifier rules, and turn completion times, and fixes transcript slowdowns on long single lines. 2.1.245 fixed a startup crash on glibc 2.44 distros (Arch, CachyOS, Fedora Rawhide). 2.1.243 added a Loops breakdown in usage tracking, model picker curation settings, and prompt cache TTL configuration.</p>
+    <ul class="points">
+      <li>2.1.246: Bash wildcard startup warnings, Auto mode classifier tab, turn timings</li>
+      <li>2.1.245: fixes startup crash on glibc 2.44 Linux distros</li>
+      <li>2.1.243: Loops usage breakdown + prompt cache TTL config</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" target="_blank" rel="noopener">github.com/anthropics/claude-code/blob/main/CHANGELOG.md</a></span>
+      <div class="kw"><span>claude-code</span><span>point-release</span><span>usage-tracking</span><span>prompt-cache</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">05</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQYzBTVFhtYVNkNUMtcWZYYkV2VUhGcEV6WTB6N2htWnFJN3dibGYyUU1TOU0yUy1EWEhpampTc0c1ZWk5b3Z2a1o3b0NBTFFQenNrdkppQ3N3U0RFY3kzSElRR0xVbER3YmtRTkVIU0VldV9GSnlfbG96Zm5ORWpuU295Z1VFVE9yVnB5VlR0VDA1SlNyT1ZGdG5fTXl3VGktWVdLemMzS3NrdXU0NUJRTk05ZWZUQzRjZ1ZNSEVZOGc1RVVRQ1M1cmVkZDRkSGhxZDVFSXZKb3VFLW8yT0E" target="_blank" rel="noopener">Anthropic expands enterprise autonomous tooling ahead of widely expected IPO</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">Financial-press item (Stocktwits, Aug 25) framing Anthropic&#x27;s recent enterprise agent/autonomous-tool releases as IPO positioning. Single-source market commentary, not a product announcement — treat as soft signal.</p>
+    <ul class="points">
+      <li>enterprise autonomous tooling read as IPO positioning</li>
+      <li>single-source financial-press framing</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQYzBTVFhtYVNkNUMtcWZYYkV2VUhGcEV6WTB6N2htWnFJN3dibGYyUU1TOU0yUy1EWEhpampTc0c1ZWk5b3Z2a1o3b0NBTFFQenNrdkppQ3N3U0RFY3kzSElRR0xVbER3YmtRTkVIU0VldV9GSnlfbG96Zm5ORWpuU295Z1VFVE9yVnB5VlR0VDA1SlNyT1ZGdG5fTXl3VGktWVdLemMzS3NrdXU0NUJRTk05ZWZUQzRjZ1ZNSEVZOGc1RVVRQ1M1cmVkZDRkSGhxZDVFSXZKb3VFLW8yT0E" target="_blank" rel="noopener">news.google.com/rss/articles/CBMi3gFBVV95cUxQYzBTVFhtYVNkNUMtcWZYYkV2VUhGcEV6WTB6N2htWnFJN3dibGYyUU1TOU0yUy1EWEhpampTc0c1ZWk5b3Z2a1o3b0NBTFFQenNrdkppQ3N3U0RFY3kzSElRR0xVbER3YmtRTkVIU0VldV9GSnlfbG96Zm5ORWpuU295Z1VFVE9yVnB5VlR0VDA1SlNyT1ZGdG5fTXl3VGktWVdLemMzS3NrdXU0NUJRTk05ZWZUQzRjZ1ZNSEVZOGc1RVVRQ1M1cmVkZDRkSGhxZDVFSXZKb3VFLW8yT0E</a></span>
+      <div class="kw"><span>enterprise</span><span>ipo</span><span>agents</span><span>market</span></div>
+    </div>
+  </article>
+  <div class="cat-head">OpenAI / ChatGPT</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">06</span>
+      <h2><a href="https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia" target="_blank" rel="noopener">OpenAI&#x27;s Jalapeño inference chip benchmarks ahead of Nvidia Blackwell</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">OpenAI published first results for Jalapeño, its Broadcom-co-developed custom inference ASIC. Reported figures: 1.9x throughput per kilowatt and 3.6x lower latency versus comparable parts, from a 700W ASIC built specifically for serving at scale. SemiAnalysis&#x27;s teardown (&#x27;Better than Nvidia Blackwell&#x27;) hit the HN front page at 332 points, making this the day&#x27;s biggest AI-infrastructure story.</p>
+    <ul class="points">
+      <li>700W custom inference ASIC, co-developed with Broadcom</li>
+      <li>claimed 1.9x throughput/kW and 3.6x lower latency vs comparable silicon</li>
+      <li>SemiAnalysis analysis ranks it above Nvidia Blackwell for inference serving</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia" target="_blank" rel="noopener">newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia</a></span>
+      <div class="kw"><span>jalapeno</span><span>inference</span><span>broadcom</span><span>asic</span><span>nvidia</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">07</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQQ3JJS01OSjNwWjUza0hhUl9fQ25uZVdMOUNIYXhISWh5c2pZbU1MV29NaGNPZ1NtclVGSVlSbVVqZG5Ndm80dTFyTnFkMlpoOFVPQTZuTlBpN1IybDd3N0xmZ05RRHktYkkwVGRRcy1wZEdpU0szcGdaQ0xkYWhKQmNmaGRXR2l4QVRLeTJ4cWNGV3A4OC1iNlRxY1R5SjVSVmh2WEc0aUJSN0pyUFVRMFJ2Sk1KWnZpTlc2YW1R?oc=5" target="_blank" rel="noopener">OpenAI abruptly restores harsh 5-hour Codex and Work limits for ChatGPT Plus</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">OpenAI reinstated restrictive 5-hour rolling usage ceilings on Codex and ChatGPT Work for Plus subscribers on Aug 25, reversing an earlier loosening. Directly hits paying developer workflows with no advance notice.</p>
+    <ul class="points">
+      <li>5-hour rolling window limits back on Codex + ChatGPT Work</li>
+      <li>applies to Plus tier, reverses earlier relaxation</li>
+      <li>no advance notice to subscribers</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQQ3JJS01OSjNwWjUza0hhUl9fQ25uZVdMOUNIYXhISWh5c2pZbU1MV29NaGNPZ1NtclVGSVlSbVVqZG5Ndm80dTFyTnFkMlpoOFVPQTZuTlBpN1IybDd3N0xmZ05RRHktYkkwVGRRcy1wZEdpU0szcGdaQ0xkYWhKQmNmaGRXR2l4QVRLeTJ4cWNGV3A4OC1iNlRxY1R5SjVSVmh2WEc0aUJSN0pyUFVRMFJ2Sk1KWnZpTlc2YW1R?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMivgFBVV95cUxQQ3JJS01OSjNwWjUza0hhUl9fQ25uZVdMOUNIYXhISWh5c2pZbU1MV29NaGNPZ1NtclVGSVlSbVVqZG5Ndm80dTFyTnFkMlpoOFVPQTZuTlBpN1IybDd3N0xmZ05RRHktYkkwVGRRcy1wZEdpU0szcGdaQ0xkYWhKQmNmaGRXR2l4QVRLeTJ4cWNGV3A4OC1iNlRxY1R5SjVSVmh2WEc0aUJSN0pyUFVRMFJ2Sk1KWnZpTlc2YW1R?oc=5</a></span>
+      <div class="kw"><span>usage-limits</span><span>codex</span><span>chatgpt-plus</span><span>pricing</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">08</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBnQ1dZRm51Q3lLeElRZUpJZU1XVkpTWkNySHBQMTBfVEMyUjlWQkxwWkdOcjhrVTJUM2FZcm9Dand2U3lBZ2ZfcE00bDNFS0lrVHZrWWRqcDJ1X3NIa1lJ?oc=5" target="_blank" rel="noopener">Admin plugin launched for ChatGPT Work and Codex</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">OpenAI shipped an Admin plugin (Aug 25) giving workspace administrators in-product management controls for ChatGPT Work and Codex deployments.</p>
+    <ul class="points">
+      <li>admin controls surfaced as a plugin inside ChatGPT Work and Codex</li>
+      <li>targets enterprise workspace management</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBnQ1dZRm51Q3lLeElRZUpJZU1XVkpTWkNySHBQMTBfVEMyUjlWQkxwWkdOcjhrVTJUM2FZcm9Dand2U3lBZ2ZfcE00bDNFS0lrVHZrWWRqcDJ1X3NIa1lJ?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMiX0FVX3lxTFBnQ1dZRm51Q3lLeElRZUpJZU1XVkpTWkNySHBQMTBfVEMyUjlWQkxwWkdOcjhrVTJUM2FZcm9Dand2U3lBZ2ZfcE00bDNFS0lrVHZrWWRqcDJ1X3NIa1lJ?oc=5</a></span>
+      <div class="kw"><span>admin</span><span>chatgpt-work</span><span>codex</span><span>enterprise</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">09</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ1doUkxoU0tsZWdKS3pSZm1mYTBTazcweVc2U2xXZV82OXNtcWQ3MkdZQ2F5LWlCVE0zakVpUGNYd1pQTF9DQ1lhMk9VLTNpcHRPTzJrSFpwMFZOQUNoQjl0OUo5aWRFZlczU1lOdFhHVlpnM000VDhQUVBjaVlBc3pkd9IBiAFBVV95cUxPcEJkWVhZWXUtUlRTczBRU25JLVpXeFoxamhNa01ZUTRUbjZWY05rdGE3aS1hWnd0RnB1RFpaWFp3TWhBVFloV2ZFVnppZ0JWV3daalVVUW5qS2ZmSTQyaWhBeHQ1czRkdmRER1J1UlY3TUZSNVpUT2Q4Zjc1Nkc4WGlvU2F6Q2py?oc=5" target="_blank" rel="noopener">OpenAI bans Russian ChatGPT accounts used in covert misinformation campaign</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">OpenAI disabled a cluster of Russian-linked accounts running a covert influence operation pushing pro-Kremlin narratives at Western audiences (Aug 25) — another entry in its periodic threat-actor disruption reporting.</p>
+    <ul class="points">
+      <li>accounts tied to coordinated pro-Kremlin influence operation</li>
+      <li>disruption reported publicly per threat-intel practice</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ1doUkxoU0tsZWdKS3pSZm1mYTBTazcweVc2U2xXZV82OXNtcWQ3MkdZQ2F5LWlCVE0zakVpUGNYd1pQTF9DQ1lhMk9VLTNpcHRPTzJrSFpwMFZOQUNoQjl0OUo5aWRFZlczU1lOdFhHVlpnM000VDhQUVBjaVlBc3pkd9IBiAFBVV95cUxPcEJkWVhZWXUtUlRTczBRU25JLVpXeFoxamhNa01ZUTRUbjZWY05rdGE3aS1hWnd0RnB1RFpaWFp3TWhBVFloV2ZFVnppZ0JWV3daalVVUW5qS2ZmSTQyaWhBeHQ1czRkdmRER1J1UlY3TUZSNVpUT2Q4Zjc1Nkc4WGlvU2F6Q2py?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMigwFBVV95cUxOQ1doUkxoU0tsZWdKS3pSZm1mYTBTazcweVc2U2xXZV82OXNtcWQ3MkdZQ2F5LWlCVE0zakVpUGNYd1pQTF9DQ1lhMk9VLTNpcHRPTzJrSFpwMFZOQUNoQjl0OUo5aWRFZlczU1lOdFhHVlpnM000VDhQUVBjaVlBc3pkd9IBiAFBVV95cUxPcEJkWVhZWXUtUlRTczBRU25JLVpXeFoxamhNa01ZUTRUbjZWY05rdGE3aS1hWnd0RnB1RFpaWFp3TWhBVFloV2ZFVnppZ0JWV3daalVVUW5qS2ZmSTQyaWhBeHQ1czRkdmRER1J1UlY3TUZSNVpUT2Q4Zjc1Nkc4WGlvU2F6Q2py?oc=5</a></span>
+      <div class="kw"><span>influence-ops</span><span>threat-intel</span><span>account-bans</span><span>misinformation</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">10</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEJXcDlJNktZYXdRUkNUemNVREp4SFlvV3cxcHVldWp3OE4tdU40TE1mZzI4QlBtTmpvZ3h3OXNQT00zcUpQdF84MDB6SjNZc3YzZmhJY21nTFFSbWJCRndkSWVZbUtnbHBLOHRIeHpWTXM4Y3kzVEJ4RE9TQlhyTTA3aUE0SXN0SnNHYTFDdjhTRGR0b19pQVpmVVlaY3ZhZWJFUlFIU3FYV0FVVzgwUg?oc=5" target="_blank" rel="noopener">WikiHow sues OpenAI over ChatGPT&#x27;s use of its how-to library</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">WikiHow filed suit against OpenAI (Aug 25) alleging its instructional content was used for training without permission — extending the training-data copyright litigation from books and news into structured how-to corpora.</p>
+    <ul class="points">
+      <li>claims unlicensed training use of WikiHow&#x27;s how-to library</li>
+      <li>expands training-data litigation beyond books/news publishers</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEJXcDlJNktZYXdRUkNUemNVREp4SFlvV3cxcHVldWp3OE4tdU40TE1mZzI4QlBtTmpvZ3h3OXNQT00zcUpQdF84MDB6SjNZc3YzZmhJY21nTFFSbWJCRndkSWVZbUtnbHBLOHRIeHpWTXM4Y3kzVEJ4RE9TQlhyTTA3aUE0SXN0SnNHYTFDdjhTRGR0b19pQVpmVVlaY3ZhZWJFUlFIU3FYV0FVVzgwUg?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMisAFBVV95cUxNWEJXcDlJNktZYXdRUkNUemNVREp4SFlvV3cxcHVldWp3OE4tdU40TE1mZzI4QlBtTmpvZ3h3OXNQT00zcUpQdF84MDB6SjNZc3YzZmhJY21nTFFSbWJCRndkSWVZbUtnbHBLOHRIeHpWTXM4Y3kzVEJ4RE9TQlhyTTA3aUE0SXN0SnNHYTFDdjhTRGR0b19pQVpmVVlaY3ZhZWJFUlFIU3FYV0FVVzgwUg?oc=5</a></span>
+      <div class="kw"><span>copyright</span><span>training-data</span><span>litigation</span><span>wikihow</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">11</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxONGxTeEh0U0Q3Vko2X0xnQ1FYYUhMMEpKUW5YaWplSlBoWkF6cVZPbXhWb0tKSmFwZVgzOHZJdTh6emM3eXVpaGRhOGExRWw5N25qQlNIX3BjczBZeUhBLURXRTBmZXN3UzROQllfN3JKNERoWjFEbzM5dG5oNU1HdEw1b0NncVk5ckduUGpySEI0eEo2UTlwUkczUlBfTGduZEdqVEZJbnNaMkdZUzVEYkpUbkx6QkhlRXlidV9pSjY?oc=5" target="_blank" rel="noopener">OpenAI adds teen safety tools to ChatGPT</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">New age-appropriate safety controls rolled out for teenage ChatGPT users (Aug 25), following sustained regulatory pressure on minors&#x27; access to conversational AI.</p>
+    <ul class="points">
+      <li>age-appropriate protections for teen accounts</li>
+      <li>responds to regulatory scrutiny of minors&#x27; AI access</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxONGxTeEh0U0Q3Vko2X0xnQ1FYYUhMMEpKUW5YaWplSlBoWkF6cVZPbXhWb0tKSmFwZVgzOHZJdTh6emM3eXVpaGRhOGExRWw5N25qQlNIX3BjczBZeUhBLURXRTBmZXN3UzROQllfN3JKNERoWjFEbzM5dG5oNU1HdEw1b0NncVk5ckduUGpySEI0eEo2UTlwUkczUlBfTGduZEdqVEZJbnNaMkdZUzVEYkpUbkx6QkhlRXlidV9pSjY?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMiwAFBVV95cUxONGxTeEh0U0Q3Vko2X0xnQ1FYYUhMMEpKUW5YaWplSlBoWkF6cVZPbXhWb0tKSmFwZVgzOHZJdTh6emM3eXVpaGRhOGExRWw5N25qQlNIX3BjczBZeUhBLURXRTBmZXN3UzROQllfN3JKNERoWjFEbzM5dG5oNU1HdEw1b0NncVk5ckduUGpySEI0eEo2UTlwUkczUlBfTGduZEdqVEZJbnNaMkdZUzVEYkpUbkx6QkhlRXlidV9pSjY?oc=5</a></span>
+      <div class="kw"><span>teen-safety</span><span>chatgpt</span><span>minors</span><span>policy</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">12</span>
+      <h2><a href="https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/" target="_blank" rel="noopener">OpenAI loses a top data center exec as high-profile departures continue</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">TechCrunch reports another senior OpenAI departure — this time a top data center executive — continuing a visible run of leadership exits during the company&#x27;s largest infrastructure buildout.</p>
+    <ul class="points">
+      <li>senior data center leadership exit</li>
+      <li>part of ongoing pattern of high-profile departures</li>
+      <li>lands the same day as the Jalapeño silicon push</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/" target="_blank" rel="noopener">techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues</a></span>
+      <div class="kw"><span>leadership</span><span>data-centers</span><span>attrition</span><span>infrastructure</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">13</span>
+      <h2><a href="https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/" target="_blank" rel="noopener">Interview: OpenAI head of product Thibault Sottiaux on agent adoption</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">TechCrunch interview in which OpenAI&#x27;s head of product argues &#x27;the world seems to be ready&#x27; for agentic products — market-readiness framing rather than a release.</p>
+    <ul class="points">
+      <li>product lead frames agent adoption as past the readiness tipping point</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/" target="_blank" rel="noopener">techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux</a></span>
+      <div class="kw"><span>agents</span><span>product-strategy</span><span>interview</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Google Gemini / DeepMind</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">14</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPRmlZd053NG9sRl9sWlp6MU9xSGpRenBhVFR2QmRGV3E5Umo2ekxUY082dmEzZEFOVXFraEYxd01RdUtfa2RBcXRpVFIzU015M3RlN0E4Y2hfY3BNb3FPSWRMY0xzRUNoVjNkUmVWcWVFeTdObHZNeTR4b25jSmxhMGg1UlBjeG9HQjBidnh2R3BQRVVRdWtIeVVLeTBoajNt" target="_blank" rel="noopener">Google Cloud launches Gemini Enterprise for Legal and Financial Services</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Google Cloud verticalized Gemini Enterprise on Aug 25 with dedicated Legal and Financial Services editions. Legal ships agents for research and contract analysis with early adopters including Cleary Gottlieb, Weil, Freshfields and Williams &amp; Connolly, and launch partners iManage, Docusign, Factor, Valtech and Devoteam. Financial Services ships decision-grade agents with data integrations from Deutsche Bank, CME Group, Moody&#x27;s, Morningstar and PitchBook.</p>
+    <ul class="points">
+      <li>Legal edition: research + contract-analysis agents, iManage/Docusign integrations</li>
+      <li>Financial Services edition: Deutsche Bank, CME, Moody&#x27;s, Morningstar, PitchBook data partners</li>
+      <li>named law-firm early adopters signal real enterprise deployment, not preview</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPRmlZd053NG9sRl9sWlp6MU9xSGpRenBhVFR2QmRGV3E5Umo2ekxUY082dmEzZEFOVXFraEYxd01RdUtfa2RBcXRpVFIzU015M3RlN0E4Y2hfY3BNb3FPSWRMY0xzRUNoVjNkUmVWcWVFeTdObHZNeTR4b25jSmxhMGg1UlBjeG9HQjBidnh2R3BQRVVRdWtIeVVLeTBoajNt" target="_blank" rel="noopener">news.google.com/rss/articles/CBMioAFBVV95cUxPRmlZd053NG9sRl9sWlp6MU9xSGpRenBhVFR2QmRGV3E5Umo2ekxUY082dmEzZEFOVXFraEYxd01RdUtfa2RBcXRpVFIzU015M3RlN0E4Y2hfY3BNb3FPSWRMY0xzRUNoVjNkUmVWcWVFeTdObHZNeTR4b25jSmxhMGg1UlBjeG9HQjBidnh2R3BQRVVRdWtIeVVLeTBoajNt</a></span>
+      <div class="kw"><span>gemini-enterprise</span><span>legal-ai</span><span>financial-services</span><span>vertical-agents</span></div>
+    </div>
+  </article>
+  <div class="cat-head">xAI / Grok</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">15</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ0VWYXd5MnAyUzdGRDB5YkJsdzk4ZW5zbDZnTUdRNVZES1d1dE5ISUVkVzUyUmRLcDBjNzJLQ1dWMUNkUUI3MWxIT2xZWHp6bndLYy1hM2I2ZnF1emNZRWh5ZzAxQzVYWEI3ZTFVZzJpUjhLQ05rTmVybjVkeWNfMmtMQlFPSTZGX0ZPNnRIdDJ5bmoyZlJ6TVppbHVkWnJnVmJlMU1JNDhpV1VY" target="_blank" rel="noopener">SpaceXAI adopts NVIDIA Vera CPU to accelerate agentic AI at massive scale</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">SpaceXAI will deploy NVIDIA Vera CPUs for Grok&#x27;s agentic workloads, with Vera Rubin NVL72 optimization slated for orbital deployment via the Starmind satellite program — compute strategy tied to space infrastructure rather than conventional data centers.</p>
+    <ul class="points">
+      <li>Vera CPUs targeted at Grok agentic inference workloads</li>
+      <li>Vera Rubin NVL72 optimization planned for orbital Starmind deployment</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ0VWYXd5MnAyUzdGRDB5YkJsdzk4ZW5zbDZnTUdRNVZES1d1dE5ISUVkVzUyUmRLcDBjNzJLQ1dWMUNkUUI3MWxIT2xZWHp6bndLYy1hM2I2ZnF1emNZRWh5ZzAxQzVYWEI3ZTFVZzJpUjhLQ05rTmVybjVkeWNfMmtMQlFPSTZGX0ZPNnRIdDJ5bmoyZlJ6TVppbHVkWnJnVmJlMU1JNDhpV1VY" target="_blank" rel="noopener">news.google.com/rss/articles/CBMirAFBVV95cUxNQ0VWYXd5MnAyUzdGRDB5YkJsdzk4ZW5zbDZnTUdRNVZES1d1dE5ISUVkVzUyUmRLcDBjNzJLQ1dWMUNkUUI3MWxIT2xZWHp6bndLYy1hM2I2ZnF1emNZRWh5ZzAxQzVYWEI3ZTFVZzJpUjhLQ05rTmVybjVkeWNfMmtMQlFPSTZGX0ZPNnRIdDJ5bmoyZlJ6TVppbHVkWnJnVmJlMU1JNDhpV1VY</a></span>
+      <div class="kw"><span>nvidia-vera</span><span>spacexai</span><span>agentic-compute</span><span>starmind</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">16</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSzBEelFNemh3dW1GeFlBMjFSa0VnM092UU5Zb2lYU0JwNmxnRGt6ckhNYjQ3Q3FiNkd5M2lTVmJtYVFSekVzcGpzS09pLTlwR3hfTFlBVXBwMkI5MmtVUkRoUXd0a0xJNkNzN3pVOG9rT1dVbEc3VnVTM05TZFRjVzE0RHljMUtzR2dNS1pIQjhEZTNPekFjWXFkMzMwMWNHelhFc2JsY1Z4TWR1bEhvNWpwSGdUTnFJckF3a01LYTQ5U090dGloUW93N3o5RF9KcmxJaWVsb2Y" target="_blank" rel="noopener">Musk: Grok now handles 15,000+ Starlink support calls a day</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Grok is running roughly 15,000 Starlink customer-support calls daily and processing 3,000+ orders weekly — one of the larger publicly-claimed production voice-agent deployments.</p>
+    <ul class="points">
+      <li>~15,000 support calls/day handled by Grok</li>
+      <li>3,000+ orders/week processed autonomously</li>
+      <li>concrete production-scale voice-agent datapoint</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSzBEelFNemh3dW1GeFlBMjFSa0VnM092UU5Zb2lYU0JwNmxnRGt6ckhNYjQ3Q3FiNkd5M2lTVmJtYVFSekVzcGpzS09pLTlwR3hfTFlBVXBwMkI5MmtVUkRoUXd0a0xJNkNzN3pVOG9rT1dVbEc3VnVTM05TZFRjVzE0RHljMUtzR2dNS1pIQjhEZTNPekFjWXFkMzMwMWNHelhFc2JsY1Z4TWR1bEhvNWpwSGdUTnFJckF3a01LYTQ5U090dGloUW93N3o5RF9KcmxJaWVsb2Y" target="_blank" rel="noopener">news.google.com/rss/articles/CBMi2AFBVV95cUxNSzBEelFNemh3dW1GeFlBMjFSa0VnM092UU5Zb2lYU0JwNmxnRGt6ckhNYjQ3Q3FiNkd5M2lTVmJtYVFSekVzcGpzS09pLTlwR3hfTFlBVXBwMkI5MmtVUkRoUXd0a0xJNkNzN3pVOG9rT1dVbEc3VnVTM05TZFRjVzE0RHljMUtzR2dNS1pIQjhEZTNPekFjWXFkMzMwMWNHelhFc2JsY1Z4TWR1bEhvNWpwSGdUTnFJckF3a01LYTQ5U090dGloUW93N3o5RF9KcmxJaWVsb2Y</a></span>
+      <div class="kw"><span>voice-agents</span><span>starlink</span><span>customer-support</span><span>production-scale</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">17</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1jdDJYWUEzc0FjRGUwVGREaDdGNHkxb0lpUVl2Y1JiMzZMQnN0MEJvSTY5TTNYX1F6VUxZMmdPZG9vaGVxaVhWWVE1eUdmN0htaXRiLUwwc2lVXzJ2N0RmT0ROS2NYYWhlRWRyY3pRTQ" target="_blank" rel="noopener">More plaintiffs join Grok CSAM suit as xAI countersues a photographer</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Additional plaintiffs joined the child sexual abuse material lawsuit over Grok&#x27;s image generation (Aug 25). Separately, xAI sued a photographer, blaming him for sexual images created with Grok (Aug 24) — an aggressive litigation posture shifting liability toward an input-provider.</p>
+    <ul class="points">
+      <li>plaintiff pool expanding in Grok CSAM litigation</li>
+      <li>xAI countersuit blames photographer for images Grok generated</li>
+      <li>liability question: model operator vs input supplier</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1jdDJYWUEzc0FjRGUwVGREaDdGNHkxb0lpUVl2Y1JiMzZMQnN0MEJvSTY5TTNYX1F6VUxZMmdPZG9vaGVxaVhWWVE1eUdmN0htaXRiLUwwc2lVXzJ2N0RmT0ROS2NYYWhlRWRyY3pRTQ" target="_blank" rel="noopener">news.google.com/rss/articles/CBMib0FVX3lxTE1jdDJYWUEzc0FjRGUwVGREaDdGNHkxb0lpUVl2Y1JiMzZMQnN0MEJvSTY5TTNYX1F6VUxZMmdPZG9vaGVxaVhWWVE1eUdmN0htaXRiLUwwc2lVXzJ2N0RmT0ROS2NYYWhlRWRyY3pRTQ</a></span>
+      <div class="kw"><span>csam</span><span>litigation</span><span>image-generation</span><span>liability</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">18</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1ZRGtMZDNmVUlUYUpSdmdidzRNdm1xcy15cGc2cy1kdGdXX1k2WjBVSV9CVTNSTGFfUDNGT0g5MElKTXk1cHNvcVBHYTZVMTJBSlZfTG53SXo1NE14RktqQlB5dXdiWmRnMVhwbWpqTkR2U1pFRlpucU1RMlpDdw" target="_blank" rel="noopener">Musk tells Cursor team Grok is falling behind</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Reported remarks from Musk&#x27;s first address to Cursor conceding Grok trails rivals — notable candor from inside the xAI/Cursor orbit about competitive position in coding models.</p>
+    <ul class="points">
+      <li>internal admission that Grok lags competitors</li>
+      <li>framed around coding-model competitiveness</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1ZRGtMZDNmVUlUYUpSdmdidzRNdm1xcy15cGc2cy1kdGdXX1k2WjBVSV9CVTNSTGFfUDNGT0g5MElKTXk1cHNvcVBHYTZVMTJBSlZfTG53SXo1NE14RktqQlB5dXdiWmRnMVhwbWpqTkR2U1pFRlpucU1RMlpDdw" target="_blank" rel="noopener">news.google.com/rss/articles/CBMifkFVX3lxTE1ZRGtMZDNmVUlUYUpSdmdidzRNdm1xcy15cGc2cy1kdGdXX1k2WjBVSV9CVTNSTGFfUDNGT0g5MElKTXk1cHNvcVBHYTZVMTJBSlZfTG53SXo1NE14RktqQlB5dXdiWmRnMVhwbWpqTkR2U1pFRlpucU1RMlpDdw</a></span>
+      <div class="kw"><span>competitive-position</span><span>cursor</span><span>coding-models</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">19</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQYlJSZGdLX0MxdjY4NlR1Sm5peDJFUm0xTXhWUlczanVrOHFVekNZQ0dhYk9mazViM1cyNW16QXhNa0xQTWJpcjE2OW5Bc2plTm5wZktDT05wR19NcTdvRmZyMzVueGNrMTYzT29kMXEwUVFwTkFOYnlUZ05IcW9LQUd0Vkl5cnkza19fUnhSUVdMZzJwYk5CN1FB" target="_blank" rel="noopener">Grok chatbot glitched into gibberish about cheese and planets</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">Grok produced extended incoherent output on Aug 25 before being corrected — a visible reliability wobble in a consumer-facing deployment.</p>
+    <ul class="points">
+      <li>extended incoherent generation observed publicly</li>
+      <li>reliability/regression signal, no root cause published</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQYlJSZGdLX0MxdjY4NlR1Sm5peDJFUm0xTXhWUlczanVrOHFVekNZQ0dhYk9mazViM1cyNW16QXhNa0xQTWJpcjE2OW5Bc2plTm5wZktDT05wR19NcTdvRmZyMzVueGNrMTYzT29kMXEwUVFwTkFOYnlUZ05IcW9LQUd0Vkl5cnkza19fUnhSUVdMZzJwYk5CN1FB" target="_blank" rel="noopener">news.google.com/rss/articles/CBMimgFBVV95cUxQYlJSZGdLX0MxdjY4NlR1Sm5peDJFUm0xTXhWUlczanVrOHFVekNZQ0dhYk9mazViM1cyNW16QXhNa0xQTWJpcjE2OW5Bc2plTm5wZktDT05wR19NcTdvRmZyMzVueGNrMTYzT29kMXEwUVFwTkFOYnlUZ05IcW9LQUd0Vkl5cnkza19fUnhSUVdMZzJwYk5CN1FB</a></span>
+      <div class="kw"><span>reliability</span><span>regression</span><span>consumer-ai</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Other AI industry</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">20</span>
+      <h2><a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/" target="_blank" rel="noopener">Hugging Face reportedly in talks to be acquired for $13B</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">TechCrunch reports Hugging Face is in acquisition talks at roughly $13B. The default distribution point for open models and datasets changing hands would reshape open-weights infrastructure for the whole ecosystem.</p>
+    <ul class="points">
+      <li>~$13B reported valuation in acquisition talks</li>
+      <li>acquirer unnamed in reporting</li>
+      <li>control of the dominant open-model hub is an ecosystem-level dependency</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/" target="_blank" rel="noopener">techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b</a></span>
+      <div class="kw"><span>hugging-face</span><span>acquisition</span><span>open-weights</span><span>ecosystem</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">21</span>
+      <h2><a href="https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/" target="_blank" rel="noopener">Stability AI raises $76M in fresh funding</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">The Stable Diffusion maker closed $76M in new funding (Aug 25), extending its runway after a turbulent stretch for the open image-generation vendor.</p>
+    <ul class="points">
+      <li>$76M raise for the Stable Diffusion vendor</li>
+      <li>signals continued investor appetite for open image models</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/" target="_blank" rel="noopener">techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding</a></span>
+      <div class="kw"><span>stability-ai</span><span>funding</span><span>image-generation</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">22</span>
+      <h2><a href="https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/" target="_blank" rel="noopener">Robotics startup Generalist reaches $3B valuation</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Sources tell TechCrunch that robotics startup Generalist has hit a $3B valuation — continued capital concentration in embodied-AI foundation models.</p>
+    <ul class="points">
+      <li>$3B valuation reported by sources</li>
+      <li>embodied-AI funding momentum continues</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/" target="_blank" rel="noopener">techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say</a></span>
+      <div class="kw"><span>robotics</span><span>embodied-ai</span><span>valuation</span><span>funding</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">23</span>
+      <h2><a href="https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/" target="_blank" rel="noopener">SEC probes Situational Awareness, the AI hedge fund that nearly imploded</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">The SEC has opened an investigation into Situational Awareness, the high-profile AI-focused hedge fund that came close to collapse — regulatory follow-through on AI-thesis financial vehicles.</p>
+    <ul class="points">
+      <li>SEC investigation follows near-implosion</li>
+      <li>scrutiny of AI-thesis investment vehicles</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/" target="_blank" rel="noopener">techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec</a></span>
+      <div class="kw"><span>sec</span><span>hedge-fund</span><span>regulation</span><span>ai-finance</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">24</span>
+      <h2><a href="https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/" target="_blank" rel="noopener">Keenable is indexing the web for AI agents</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">Accel-backed Keenable is building agent-native web indexing infrastructure — retrieval substrate designed for autonomous consumption rather than human browsing.</p>
+    <ul class="points">
+      <li>web index built for agent consumption, not human search</li>
+      <li>Accel-backed infrastructure play</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/" target="_blank" rel="noopener">techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents</a></span>
+      <div class="kw"><span>agent-infrastructure</span><span>web-index</span><span>retrieval</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">25</span>
+      <h2><a href="https://techcrunch.com/2026/08/25/gamma-acquires-accel-backed-design-startup-lica/" target="_blank" rel="noopener">Gamma acquires Accel-backed design startup Lica</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">AI presentation company Gamma acquired design startup Lica (Aug 25), consolidating the AI-design tooling segment.</p>
+    <ul class="points">
+      <li>consolidation in AI design/presentation tooling</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/08/25/gamma-acquires-accel-backed-design-startup-lica/" target="_blank" rel="noopener">techcrunch.com/2026/08/25/gamma-acquires-accel-backed-design-startup-lica</a></span>
+      <div class="kw"><span>acquisition</span><span>design-tools</span><span>consolidation</span></div>
+    </div>
+  </article>
+  <div class="sec-head">General tech</div>
+  <div class="cat-head">AI / ML</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">26</span>
+      <h2><a href="https://huggingface.co/papers/2608.23552" target="_blank" rel="noopener">Prime Agent: a self-improving RLM harness</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">Top-ranked paper on HuggingFace today, and by a wide margin over the rest of the page. Presents a reinforcement-learning harness in which the agent scaffolding self-optimizes rather than the weights, continuing the harness-scaling thread that has dominated recent agent research.</p>
+    <ul class="points">
+      <li>self-improving harness rather than model-weight training</li>
+      <li>ranked #1 on HF papers, clear separation from the field</li>
+      <li>extends the &#x27;harness is the lever&#x27; line of work</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2608.23552" target="_blank" rel="noopener">huggingface.co/papers/2608.23552</a></span>
+      <div class="kw"><span>agent-harness</span><span>self-improvement</span><span>rl</span><span>paper</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">27</span>
+      <h2><a href="https://huggingface.co/papers/2608.23189" target="_blank" rel="noopener">EchoWM: open and enterable omnimodal world models</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Second-ranked HF paper today, presenting an open framework for interactive multimodal world simulation — &#x27;enterable&#x27; models you can step into and act within, not just sample from.</p>
+    <ul class="points">
+      <li>open-source omnimodal world-model framework</li>
+      <li>interactive/enterable simulation rather than passive generation</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2608.23189" target="_blank" rel="noopener">huggingface.co/papers/2608.23189</a></span>
+      <div class="kw"><span>world-models</span><span>omnimodal</span><span>simulation</span><span>paper</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">28</span>
+      <h2><a href="https://huggingface.co/papers/2608.23283" target="_blank" rel="noopener">Apodex 1.1: scaling agentic intelligence for complex work</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">HF paper (583 upvotes) on scaling agent systems to sophisticated real-world task automation — long-horizon reasoning and task decomposition for production work rather than benchmarks.</p>
+    <ul class="points">
+      <li>targets complex real-world task automation</li>
+      <li>long-horizon agentic reasoning at scale</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2608.23283" target="_blank" rel="noopener">huggingface.co/papers/2608.23283</a></span>
+      <div class="kw"><span>agents</span><span>scaling</span><span>automation</span><span>paper</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">29</span>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/anonymouskit-phaas-uses-voice-ai-agents-to-phish-iphone-passcodes/" target="_blank" rel="noopener">AnonyMousKIT phishing-as-a-service uses voice AI agents to steal iPhone passcodes</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">BleepingComputer details a PhaaS platform that automates voice-AI calls to phish the passcodes needed to unlock stolen Apple devices. Conversational agents are now a packaged commodity in criminal service offerings, not a bespoke capability.</p>
+    <ul class="points">
+      <li>voice AI agents automate passcode-phishing calls at scale</li>
+      <li>sold as phishing-as-a-service, lowering attacker skill floor</li>
+      <li>targets unlock codes for stolen iPhones specifically</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://www.bleepingcomputer.com/news/security/anonymouskit-phaas-uses-voice-ai-agents-to-phish-iphone-passcodes/" target="_blank" rel="noopener">www.bleepingcomputer.com/news/security/anonymouskit-phaas-uses-voice-ai-agents-to-phish-iphone-passcodes</a></span>
+      <div class="kw"><span>voice-phishing</span><span>phaas</span><span>ai-abuse</span><span>security</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Hard tech</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">30</span>
+      <h2><a href="https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/" target="_blank" rel="noopener">Apple introduces M6 and M5 Ultra</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Apple announced the M6 and M5 Ultra, positioned around a large jump in both general performance and on-device AI compute. Top HN story of the day at 965 points, with the accompanying Mac Studio (M5 Max / M5 Ultra) and Mac mini (M6 / M5 Pro) refreshes also on the front page.</p>
+    <ul class="points">
+      <li>M6 and M5 Ultra target performance plus on-device AI compute</li>
+      <li>Mac Studio refresh with M5 Max / M5 Ultra (705 HN points)</li>
+      <li>Mac mini refresh with M6 / M5 Pro (432 HN points)</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/" target="_blank" rel="noopener">www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute</a></span>
+      <div class="kw"><span>apple-silicon</span><span>m6</span><span>on-device-ai</span><span>hardware</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">31</span>
+      <h2><a href="https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/" target="_blank" rel="noopener">Your executable is a SQLite database</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">A technique for embedding ELF executable structure inside SQLite tables so a database file runs directly as a binary via a custom interpreter. Format-boundary hacking that doubles as a clear lesson in how ELF loading actually works.</p>
+    <ul class="points">
+      <li>ELF components stored as SQLite table rows</li>
+      <li>database file executes directly through a custom interpreter</li>
+      <li>practical demo of ELF loader internals</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/" target="_blank" rel="noopener">simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database</a></span>
+      <div class="kw"><span>sqlite</span><span>elf</span><span>linux</span><span>binary-formats</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">32</span>
+      <h2><a href="https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/" target="_blank" rel="noopener">EVE Online begins its move from Stackless Python 2.7 to Python 3</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">CCP started migrating EVE Online off Stackless Python 2.7: roughly 2.4 million lines of code and about 20,000 catalogued behavioral differences between the two runtimes. A rare public account of legacy-runtime migration at genuine scale.</p>
+    <ul class="points">
+      <li>~2.4M lines of code in scope</li>
+      <li>~20,000 behavioral differences between Py2 and Py3 to reconcile</li>
+      <li>Stackless-specific concurrency model complicates the port</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/" target="_blank" rel="noopener">simonwillison.net/2026/Aug/25/eve-online-move-to-python-3</a></span>
+      <div class="kw"><span>python-3</span><span>legacy-migration</span><span>stackless</span><span>gamedev</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">33</span>
+      <h2><a href="https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability" target="_blank" rel="noopener">When str.lower() is a security vulnerability in Python</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Seth Larson shows how Unicode case-folding in str.lower() breaks naive normalization-based security checks — characters that lowercase into ASCII lookalikes defeat allowlist and comparison logic.</p>
+    <ul class="points">
+      <li>Unicode case-folding produces unexpected ASCII collisions</li>
+      <li>breaks normalization-then-compare validation patterns</li>
+      <li>affects allowlists, header checks, and identifier matching</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability" target="_blank" rel="noopener">sethmlarson.dev/when-str-lower-is-a-security-vulnerability</a></span>
+      <div class="kw"><span>python</span><span>unicode</span><span>security</span><span>input-validation</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">34</span>
+      <h2><a href="https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html" target="_blank" rel="noopener">C2PA cameras do not survive contact with reality</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">David Buchanan&#x27;s analysis of C2PA content-provenance in Android cameras finds the implementation gaps make the guarantees far weaker in practice than in spec — directly relevant as AI-media provenance schemes get pushed as a policy answer.</p>
+    <ul class="points">
+      <li>real-world C2PA implementations fall short of spec guarantees</li>
+      <li>undercuts provenance-signing as a synthetic-media defense</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html" target="_blank" rel="noopener">www.da.vidbuchanan.co.uk/blog/android-c2pa.html</a></span>
+      <div class="kw"><span>c2pa</span><span>provenance</span><span>android</span><span>media-authenticity</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">35</span>
+      <h2><a href="https://github.com/zedeus/nitter/issues/1442" target="_blank" rel="noopener">Nitter and XCancel receive cease and desist notices</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">The main X/Twitter alternative frontends were served cease-and-desist notices (651 HN points). Practically, the remaining reliable route for programmatically reading X content is closing — relevant to anyone whose tooling scrapes vendor announcements posted only on X.</p>
+    <ul class="points">
+      <li>Nitter and XCancel both served C&amp;D</li>
+      <li>removes the last widely-used unauthenticated X read path</li>
+      <li>breaks scrapers and news pipelines that mirror X posts</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://github.com/zedeus/nitter/issues/1442" target="_blank" rel="noopener">github.com/zedeus/nitter/issues/1442</a></span>
+      <div class="kw"><span>nitter</span><span>x-twitter</span><span>scraping</span><span>legal</span></div>
+    </div>
+  </article>
+  </section>
+  <section class="day" id="day-2026-08-24" role="tabpanel" hidden>
   <p class="day-sum">21 AI industry · 9 general tech</p>
   <div class="sec-head">AI industry</div>
   <div class="cat-head">Anthropic / Claude</div>
@@ -1087,508 +1674,7 @@
     </div>
   </article>
   </section>
-  <section class="day" id="day-2026-08-21" role="tabpanel" hidden>
-  <p class="day-sum">17 AI industry · 12 general tech</p>
-  <div class="sec-head">AI industry</div>
-  <div class="cat-head">Anthropic / Claude</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">01</span>
-      <h2><a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">Computer use tool GA + new browser use toolset on Claude API</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">The computer use tool is now GA as computer_toolset_20260801 (no beta header, batch actions, zoom default), and a new browser_toolset_20260801 launches for driving an application-hosted browser via accessibility-tree reading, element references, forms, and tabs.</p>
-    <ul class="points">
-      <li>computer use GA — beta header dropped, batch actions added</li>
-      <li>new browser use toolset: accessibility-tree driven, forms + tabs</li>
-      <li>available on Fable 5, Mythos 5, Opus 5, Sonnet 5, Opus 4.8</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">platform.claude.com/docs/en/release-notes/overview</a></span>
-      <div class="kw"><span>computer-use</span><span>browser-use</span><span>api</span><span>ga</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">02</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNaDlfRWVSb2Q5ZEhuaWFqdHR3WThoM2tOalBxeW91VEZGZWgzTUNJZF9NZUxFTmhINXlHS1V3YlZvTXAtNExsT3JtaTdmajA2UlZvYUtOOTI4ZEtBRFIzYTVBNl9nRUhzVUFybmZfX3BIVjd4aDJMM1hpUXQtMC1lZzZXR0k2c3poNlUtUWl0RGZ5NzhNSmtaTzI2NmF0QU54WWZvYVhzREpmanpmN2lfNHh3?oc=5" target="_blank" rel="noopener">Anthropic to change enterprise data retention policy</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Following enterprise customer concerns, Anthropic is modifying how it retains corporate customer data — a direct change to Claude enterprise privacy terms, per Reuters.</p>
-    <ul class="points">
-      <li>enterprise data retention policy being revised</li>
-      <li>driven by corporate customer concerns</li>
-      <li>lands amid OpenAI/Anthropic enterprise privacy rivalry</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNaDlfRWVSb2Q5ZEhuaWFqdHR3WThoM2tOalBxeW91VEZGZWgzTUNJZF9NZUxFTmhINXlHS1V3YlZvTXAtNExsT3JtaTdmajA2UlZvYUtOOTI4ZEtBRFIzYTVBNl9nRUhzVUFybmZfX3BIVjd4aDJMM1hpUXQtMC1lZzZXR0k2c3poNlUtUWl0RGZ5NzhNSmtaTzI2NmF0QU54WWZvYVhzREpmanpmN2lfNHh3?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMisgFBVV95cUxNaDlfRWVSb2Q5ZEhuaWFqdHR3WThoM2tOalBxeW91VEZGZWgzTUNJZF9NZUxFTmhINXlHS1V3YlZvTXAtNExsT3JtaTdmajA2UlZvYUtOOTI4ZEtBRFIzYTVBNl9nRUhzVUFybmZfX3BIVjd4aDJMM1hpUXQtMC1lZzZXR0k2c3poNlUtUWl0RGZ5NzhNSmtaTzI2NmF0QU54WWZvYVhzREpmanpmN2lfNHh3?oc=5</a></span>
-      <div class="kw"><span>anthropic</span><span>data-retention</span><span>enterprise</span><span>privacy</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">03</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQMWtOUFRTLWtoemREQ09uOVpoQUJPQ2lyUjU2SVpEMEFNNXNoaGs4UWZfeGFING1pcG41VFlEUEx6NWxCNU5pTnFYd0RkNlhYWGJpdUp4d1dxNV9abWZBb3JtZkFwNVhuSE94Z2l3T1hzcFM4YjNGWXpmRHBWLXJQRVV1Y0VRMnlRRHdGV0lDRW1Ndzg?oc=5" target="_blank" rel="noopener">Anthropic&#x27;s enterprise venture acquires consultancy</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Anthropic expanded its enterprise operations by acquiring a consulting firm to strengthen business offerings — a push into services-led enterprise deployment, per The Information.</p>
-    <ul class="points">
-      <li>consultancy acquisition for enterprise arm</li>
-      <li>services-led go-to-market expansion</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQMWtOUFRTLWtoemREQ09uOVpoQUJPQ2lyUjU2SVpEMEFNNXNoaGs4UWZfeGFING1pcG41VFlEUEx6NWxCNU5pTnFYd0RkNlhYWGJpdUp4d1dxNV9abWZBb3JtZkFwNVhuSE94Z2l3T1hzcFM4YjNGWXpmRHBWLXJQRVV1Y0VRMnlRRHdGV0lDRW1Ndzg?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMikwFBVV95cUxQMWtOUFRTLWtoemREQ09uOVpoQUJPQ2lyUjU2SVpEMEFNNXNoaGs4UWZfeGFING1pcG41VFlEUEx6NWxCNU5pTnFYd0RkNlhYWGJpdUp4d1dxNV9abWZBb3JtZkFwNVhuSE94Z2l3T1hzcFM4YjNGWXpmRHBWLXJQRVV1Y0VRMnlRRHdGV0lDRW1Ndzg?oc=5</a></span>
-      <div class="kw"><span>anthropic</span><span>acquisition</span><span>enterprise</span><span>consulting</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">04</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBSTlRJMVQ2QmgzQkNXMWNRQ1JfaFFFOXFKS1I4QnlVY3oweEQ5YUFSVGJ1c2VGYnJ0RXZmYWstaVR6MUJtcUJ0em0zUW5kMmNTeUJ2UmNxcERxNDY0b3Q0TmhIQkF0dTdlZGNYQ3lR?oc=5" target="_blank" rel="noopener">Anthropic launches Claude Academy</a></h2>
-      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
-    </div>
-    <p class="summary">New educational initiative offering learning resources and training materials for AI practitioners — ecosystem/enablement move for Claude adoption.</p>
-    <ul class="points">
-      <li>education/training initiative for practitioners</li>
-      <li>Claude ecosystem enablement</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBSTlRJMVQ2QmgzQkNXMWNRQ1JfaFFFOXFKS1I4QnlVY3oweEQ5YUFSVGJ1c2VGYnJ0RXZmYWstaVR6MUJtcUJ0em0zUW5kMmNTeUJ2UmNxcERxNDY0b3Q0TmhIQkF0dTdlZGNYQ3lR?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMibkFVX3lxTFBSTlRJMVQ2QmgzQkNXMWNRQ1JfaFFFOXFKS1I4QnlVY3oweEQ5YUFSVGJ1c2VGYnJ0RXZmYWstaVR6MUJtcUJ0em0zUW5kMmNTeUJ2UmNxcERxNDY0b3Q0TmhIQkF0dTdlZGNYQ3lR?oc=5</a></span>
-      <div class="kw"><span>claude-academy</span><span>education</span><span>training</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">05</span>
-      <h2><a href="https://status.claude.com/" target="_blank" rel="noopener">Two brief Claude incidents on Aug 20, both resolved</a></h2>
-      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
-    </div>
-    <p class="summary">Status page logged two same-day incidents: elevated errors on multiple Claude models (resolved in ~26 minutes, 19:16-19:42 UTC) and degraded Google connector integrations on Claude.ai (Sheets/Docs/Slides/Chat, resolved 19:01 UTC). Core functionality unaffected.</p>
-    <ul class="points">
-      <li>multi-model elevated errors: resolved in 26 min</li>
-      <li>Google connectors degraded, core Claude.ai unaffected</li>
-      <li>no lasting impact reported</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://status.claude.com/" target="_blank" rel="noopener">status.claude.com</a></span>
-      <div class="kw"><span>incident</span><span>status</span><span>resolved</span></div>
-    </div>
-  </article>
-  <div class="cat-head">OpenAI / ChatGPT</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">06</span>
-      <h2><a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/" target="_blank" rel="noopener">OpenAI gaining on Anthropic with business users, new data indicates</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">New market data shows OpenAI expanding its share among enterprise customers, narrowing Anthropic&#x27;s lead in business AI adoption — a shift in the enterprise LLM competitive landscape.</p>
-    <ul class="points">
-      <li>OpenAI enterprise share growing</li>
-      <li>Anthropic business-user lead narrowing</li>
-      <li>based on newly released adoption data</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/" target="_blank" rel="noopener">techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates</a></span>
-      <div class="kw"><span>openai</span><span>anthropic</span><span>enterprise</span><span>market-share</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">07</span>
-      <h2><a href="https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/" target="_blank" rel="noopener">ChatGPT can now send texts via new Apple Messages plug-in</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">OpenAI shipped a ChatGPT integration for Apple Messages letting users compose and send texts directly through the assistant — deeper OS-level agentic action on Apple platforms.</p>
-    <ul class="points">
-      <li>new Apple Messages plug-in</li>
-      <li>ChatGPT composes and sends texts</li>
-      <li>extends OS-level agent integration</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/" target="_blank" rel="noopener">techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin</a></span>
-      <div class="kw"><span>chatgpt</span><span>apple-messages</span><span>agents</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">08</span>
-      <h2><a href="https://openai.com/index/chatgpt-ads-expands-across-europe" target="_blank" rel="noopener">ChatGPT Ads expands to 31 European markets</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">OpenAI&#x27;s ChatGPT advertising platform expanded across Europe, letting businesses reach users during decision-making moments — significant broadening of OpenAI&#x27;s commercial footprint.</p>
-    <ul class="points">
-      <li>ads now live in 31 European markets</li>
-      <li>targets decision-making moments</li>
-      <li>major monetization expansion</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://openai.com/index/chatgpt-ads-expands-across-europe" target="_blank" rel="noopener">openai.com/index/chatgpt-ads-expands-across-europe</a></span>
-      <div class="kw"><span>chatgpt-ads</span><span>europe</span><span>monetization</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">09</span>
-      <h2><a href="https://openai.com/index/introducing-ai-futures" target="_blank" rel="noopener">OpenAI launches AI Futures blog</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">New OpenAI blog dedicated to exploring transformative AI&#x27;s impact on governance, economics, and individual freedoms — how advanced AI could reshape power structures and societal systems.</p>
-    <ul class="points">
-      <li>new policy/essay blog initiative</li>
-      <li>focus: governance, economics, individual freedoms</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://openai.com/index/introducing-ai-futures" target="_blank" rel="noopener">openai.com/index/introducing-ai-futures</a></span>
-      <div class="kw"><span>ai-futures</span><span>policy</span><span>governance</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">10</span>
-      <h2><a href="https://openai.com/index/replit" target="_blank" rel="noopener">Replit Free Mode powered by GPT-5.6 Luna</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Replit introduced a Free Mode powered by GPT-5.6 Luna, letting users create functional applications without worrying about token costs.</p>
-    <ul class="points">
-      <li>free tier app creation on GPT-5.6 Luna</li>
-      <li>no token-cost concern for users</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://openai.com/index/replit" target="_blank" rel="noopener">openai.com/index/replit</a></span>
-      <div class="kw"><span>replit</span><span>gpt-5.6-luna</span><span>free-tier</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">11</span>
-      <h2><a href="https://openai.com/index/pacing-model-development-cyber-capabilities" target="_blank" rel="noopener">OpenAI details safety-paced development for cyber-critical capabilities</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">OpenAI describes strengthened monitoring and security safeguards for frontier models with enhanced cyber capabilities, guiding development pace while maintaining safety standards.</p>
-    <ul class="points">
-      <li>enhanced cyber-capability safeguards</li>
-      <li>frontier model monitoring strengthened</li>
-      <li>follows GPT-5.6 Cyber restricted release</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://openai.com/index/pacing-model-development-cyber-capabilities" target="_blank" rel="noopener">openai.com/index/pacing-model-development-cyber-capabilities</a></span>
-      <div class="kw"><span>cybersecurity</span><span>safety</span><span>frontier-models</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">12</span>
-      <h2><a href="https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/" target="_blank" rel="noopener">ChatGPT search now uses the site: operator at scale</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Promptwatch data shows ChatGPT Search&#x27;s use of the site: operator jumped from ~0.3-0.5% to 16-17% of queries after the GPT-5.6 rollout, and Reddit&#x27;s prominence in results dropped — a concrete behavioral change in how OpenAI&#x27;s search agent queries the web.</p>
-    <ul class="points">
-      <li>site: operator usage up ~40x post GPT-5.6</li>
-      <li>Reddit prominence reduced</li>
-      <li>measured via Promptwatch analytics</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/" target="_blank" rel="noopener">simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale</a></span>
-      <div class="kw"><span>chatgpt-search</span><span>gpt-5.6</span><span>search-behavior</span></div>
-    </div>
-  </article>
-  <div class="cat-head">Google Gemini / DeepMind</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">13</span>
-      <h2><a href="https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/" target="_blank" rel="noopener">Google gives publishers a new way to fight AI-driven traffic losses</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Google introduced tools letting publishers mitigate traffic losses caused by AI-powered search summaries — a response to publisher backlash against AI Overviews-style features.</p>
-    <ul class="points">
-      <li>new publisher-facing controls</li>
-      <li>addresses AI-search traffic erosion</li>
-      <li>response to publisher pressure</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/" target="_blank" rel="noopener">techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses</a></span>
-      <div class="kw"><span>google</span><span>publishers</span><span>ai-search</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">14</span>
-      <h2><a href="https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/" target="_blank" rel="noopener">Free year of Google AI Pro / AI Plus for college students</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Eligible college students get 12 months of Google AI Pro (US, $19.99/month value) or AI Plus with Gemini Omni access internationally, bundled with study notebooks, interactive 3D visualizations, and Deep Research in Gemini Live.</p>
-    <ul class="points">
-      <li>free 12 months AI Pro (US) / AI Plus (intl)</li>
-      <li>redemption open until 2026-12-31</li>
-      <li>bundles study tools + Deep Research in Gemini Live</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/" target="_blank" rel="noopener">blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai</a></span>
-      <div class="kw"><span>gemini</span><span>student-offer</span><span>ai-pro</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">15</span>
-      <h2><a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-waymo/" target="_blank" rel="noopener">Waymo brings Gemini into its Ojai robotaxis</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Waymo integrated the Gemini assistant into its Ojai autonomous vehicles for voice-controlled cabin functions, local recommendations, and landmark info. Gemini runs fully separate from the Waymo Driver stack and activates only opt-in.</p>
-    <ul class="points">
-      <li>voice control for cabin functions + place discovery</li>
-      <li>independent of autonomous driving stack, opt-in only</li>
-      <li>Gemini as robotaxi passenger-experience layer</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-waymo/" target="_blank" rel="noopener">blog.google/innovation-and-ai/products/gemini-app/gemini-waymo</a></span>
-      <div class="kw"><span>waymo</span><span>gemini</span><span>in-car-assistant</span></div>
-    </div>
-  </article>
-  <div class="cat-head">xAI / Grok</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">16</span>
-      <h2><a href="https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/" target="_blank" rel="noopener">Grok keeps sending gibberish responses to users</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">xAI&#x27;s Grok chatbot is repeatedly producing nonsensical outputs for users, highlighting ongoing reliability and quality-control problems in the service.</p>
-    <ul class="points">
-      <li>recurring gibberish outputs</li>
-      <li>user-facing quality degradation</li>
-      <li>follows rapid Grok 4.6 / Grok Bot shipping pace</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/" target="_blank" rel="noopener">techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users</a></span>
-      <div class="kw"><span>grok</span><span>xai</span><span>reliability</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">17</span>
-      <h2><a href="https://docs.x.ai/docs" target="_blank" rel="noopener">xAI ships Grok Build agentic CLI; Grok Code API in early access</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">xAI introduced Grok Build, an agentic command-line tool for automating computer operations, while docs list a dedicated Grok Code API (&#x27;our coding model, on the API and CLI&#x27;) in early access — xAI&#x27;s entry into the coding-agent CLI space alongside Claude Code and Codex CLI.</p>
-    <ul class="points">
-      <li>agentic CLI automating computer operations</li>
-      <li>dedicated coding model via API + CLI, early access</li>
-      <li>competes with Claude Code / Codex CLI</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://docs.x.ai/docs" target="_blank" rel="noopener">docs.x.ai/docs</a></span>
-      <div class="kw"><span>grok-build</span><span>agentic-cli</span><span>coding-agent</span><span>early-access</span></div>
-    </div>
-  </article>
-  <div class="sec-head">General tech</div>
-  <div class="cat-head">AI / ML</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">18</span>
-      <h2><a href="https://huggingface.co/papers/2608.14022" target="_blank" rel="noopener">ForgeWM: progressive causal training for few-step action-conditioned video world models</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Introduces progressive causal training enabling video world models to predict action-conditioned future frames in only a few sampling steps — top HuggingFace paper of the day (76 upvotes), targeting the efficiency bottleneck of world models for agents and robotics.</p>
-    <ul class="points">
-      <li>few-step action-conditioned video prediction</li>
-      <li>improves world-model inference efficiency</li>
-      <li>76 upvotes, clear top paper today</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://huggingface.co/papers/2608.14022" target="_blank" rel="noopener">huggingface.co/papers/2608.14022</a></span>
-      <div class="kw"><span>world-models</span><span>video-generation</span><span>robotics</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">19</span>
-      <h2><a href="https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/" target="_blank" rel="noopener">A third of web pages published since ChatGPT&#x27;s launch show signs of AI authorship</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Research finds roughly one-third of web pages published since ChatGPT launched show markers of AI generation — quantifying the scale of AI-authored content flooding the web and its implications for search and training data.</p>
-    <ul class="points">
-      <li>~33% of new pages show AI authorship</li>
-      <li>study spans full post-ChatGPT era</li>
-      <li>implications for web/data quality</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/" target="_blank" rel="noopener">techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds</a></span>
-      <div class="kw"><span>ai-content</span><span>web-pollution</span><span>training-data</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">20</span>
-      <h2><a href="https://huggingface.co/papers/2608.18580" target="_blank" rel="noopener">FACET: preserving source intent and executable state in terminal task synthesis</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Tackles synthesis of terminal/CLI tasks for agent training while preserving original source intent and keeping environments executable — feeds the training-data pipeline for coding and terminal-use agents.</p>
-    <ul class="points">
-      <li>synthesizes terminal tasks without breaking executability</li>
-      <li>preserves source intent during generation</li>
-      <li>relevant to CLI/coding agent training data</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://huggingface.co/papers/2608.18580" target="_blank" rel="noopener">huggingface.co/papers/2608.18580</a></span>
-      <div class="kw"><span>agents</span><span>task-synthesis</span><span>terminal</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">21</span>
-      <h2><a href="https://mathstodon.xyz/@maxpool/117128107757895678" target="_blank" rel="noopener">Copyright does not protect AI-generated content in EU</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Discussion of the EU legal position that purely AI-generated content is not eligible for copyright protection, and what that means for companies shipping AI-produced code, text, and media.</p>
-    <ul class="points">
-      <li>EU copyright requires human authorship</li>
-      <li>ownership implications for AI-generated code/assets</li>
-      <li>active HN debate on business consequences</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://mathstodon.xyz/@maxpool/117128107757895678" target="_blank" rel="noopener">mathstodon.xyz/@maxpool/117128107757895678</a></span>
-      <div class="kw"><span>copyright</span><span>ai-law</span><span>eu</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">22</span>
-      <h2><a href="https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/" target="_blank" rel="noopener">Ramp launches its own AI model router, called Router</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Fintech Ramp unveiled a proprietary model-routing system directing requests across multiple LLMs for cost and performance optimization — a signal that large non-AI companies now build in-house routing layers.</p>
-    <ul class="points">
-      <li>in-house multi-model router</li>
-      <li>cost/performance optimization</li>
-      <li>enterprise LLM-ops trend</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/" target="_blank" rel="noopener">techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router</a></span>
-      <div class="kw"><span>model-routing</span><span>llm-ops</span><span>ramp</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">23</span>
-      <h2><a href="https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/" target="_blank" rel="noopener">AI data startup Micro1 reaches $500M gross run rate</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Data-annotation startup Micro1 hit a $500M annualized gross run rate on demand for model-training data — continued heavy frontier-lab spend on human data pipelines.</p>
-    <ul class="points">
-      <li>$500M gross run rate</li>
-      <li>data-annotation demand surging</li>
-      <li>frontier training-data economy</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/" target="_blank" rel="noopener">techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom</a></span>
-      <div class="kw"><span>training-data</span><span>micro1</span><span>run-rate</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">24</span>
-      <h2><a href="https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/" target="_blank" rel="noopener">smolmachines/smolvm as a sandbox for untrusted Python &amp; JavaScript</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Simon Willison had Claude Fable 5 research smolvm as a resource-limited sandbox for untrusted code; lacking local virtualization, the agent improvised GitHub Actions workflows to run its tests — notable agentic workaround behavior and sandboxing pattern.</p>
-    <ul class="points">
-      <li>smolvm evaluated for untrusted-code sandboxing</li>
-      <li>agent improvised GitHub Actions to test</li>
-      <li>Claude Fable 5-driven research</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/" target="_blank" rel="noopener">simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox</a></span>
-      <div class="kw"><span>sandboxing</span><span>untrusted-code</span><span>agents</span></div>
-    </div>
-  </article>
-  <div class="cat-head">Hard tech</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">25</span>
-      <h2><a href="https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html" target="_blank" rel="noopener">AliExpress runs silent WebAudio fingerprinting that breaks Bluetooth multipoint</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Investigation into how AliExpress web pages silently run WebAudio-based browser fingerprinting, keeping the audio stack active and breaking Bluetooth multipoint audio on users&#x27; headphones — invasive tracking causing real hardware-level side effects.</p>
-    <ul class="points">
-      <li>WebAudio API abused for silent fingerprinting</li>
-      <li>keeps audio session alive, breaking multipoint switching</li>
-      <li>debugging from user-visible symptom down to tracking code</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html" target="_blank" rel="noopener">blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html</a></span>
-      <div class="kw"><span>fingerprinting</span><span>webaudio</span><span>privacy</span><span>bluetooth</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">26</span>
-      <h2><a href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/" target="_blank" rel="noopener">GitHub postmortem: the August 17 outage and the work ahead</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">GitHub&#x27;s official postmortem of its major August 17 outage — root cause, incident response, and planned reliability work. High-signal reading for anyone running large-scale distributed infrastructure.</p>
-    <ul class="points">
-      <li>first-party postmortem of a major outage</li>
-      <li>timeline, root cause, remediation plan</li>
-      <li>325 points / 373 comments on HN</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/" target="_blank" rel="noopener">github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead</a></span>
-      <div class="kw"><span>postmortem</span><span>reliability</span><span>github</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">27</span>
-      <h2><a href="https://chrisburnell.com/html-can-do-that/" target="_blank" rel="noopener">HTML Can Do That</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Tour of modern native HTML capabilities — features developers commonly reimplement in JavaScript that the platform now provides for free. Practical reference for simpler, more accessible frontends.</p>
-    <ul class="points">
-      <li>underused built-in HTML elements/attributes</li>
-      <li>platform-native over JS reimplementation</li>
-      <li>579 points on HN</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://chrisburnell.com/html-can-do-that/" target="_blank" rel="noopener">chrisburnell.com/html-can-do-that</a></span>
-      <div class="kw"><span>html</span><span>web-platform</span><span>frontend</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">28</span>
-      <h2><a href="https://simonwillison.net/2026/Aug/20/bun-webview-json-api/" target="_blank" rel="noopener">Bun 1.4 ships Bun.WebView — shot-scraper-style JSON API prototype</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Bun 1.4 adds Bun.WebView for browser automation via Chrome DevTools Protocol; Willison prototyped a JSON API executing JavaScript against loaded pages at roughly 192-256MB per container — relevant to lightweight agent browser tooling.</p>
-    <ul class="points">
-      <li>Bun 1.4 ships WebView/CDP automation</li>
-      <li>shot-scraper-style JSON API prototype</li>
-      <li>~192-256MB per container footprint</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://simonwillison.net/2026/Aug/20/bun-webview-json-api/" target="_blank" rel="noopener">simonwillison.net/2026/Aug/20/bun-webview-json-api</a></span>
-      <div class="kw"><span>bun</span><span>browser-automation</span><span>agent-tooling</span></div>
-    </div>
-  </article>
-  <div class="cat-head">Soft skills</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">29</span>
-      <h2><a href="https://jacob.gold/posts/theres-no-such-thing-as-a-small-software-team/" target="_blank" rel="noopener">There&#x27;s no such thing as a small software team anymore</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Essay arguing modern delivery expectations — security, compliance, CI/CD, on-call, multi-platform — mean even tiny products carry big-team workloads; tooling and AI shift but do not remove that burden.</p>
-    <ul class="points">
-      <li>baseline operational expectations outgrew team sizes</li>
-      <li>small teams absorb once-specialist responsibilities</li>
-      <li>AI framed as leverage, not workload replacement</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://jacob.gold/posts/theres-no-such-thing-as-a-small-software-team/" target="_blank" rel="noopener">jacob.gold/posts/theres-no-such-thing-as-a-small-software-team</a></span>
-      <div class="kw"><span>software-teams</span><span>engineering-management</span><span>productivity</span></div>
-    </div>
-  </article>
-  </section>
-  <div class="ai-foot">Daily News Report v3.2 (AI focus) · rolling 3-day window · latest 2026-08-24<br>
+  <div class="ai-foot">Daily News Report v3.2 (AI focus) · rolling 3-day window · latest 2026-08-26<br>
     Sources: Anthropic, OpenAI, Gemini/DeepMind, xAI, TechCrunch AI, The Verge AI, Simon Willison, Hacker News, HuggingFace</div>
 </div>
 <script>
