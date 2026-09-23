@@ -78,18 +78,455 @@
 </head>
 <body>
 <div class="ai-wrap">
-  <div class="ai-head"><h1>Daily AI news</h1><span class="ai-date">2026-09-22</span></div>
+  <div class="ai-head"><h1>Daily AI news</h1><span class="ai-date">2026-09-23</span></div>
   <div class="ai-meta">Focus: Anthropic · OpenAI · Gemini · Grok. One tab per day; days older than 7 are dropped automatically.</div>
   <div class="tabbar" role="tablist">
-    <button class="tab" role="tab" aria-selected="true" aria-controls="day-2026-09-22">2026-09-22<span class="n">22</span></button>
+    <button class="tab" role="tab" aria-selected="true" aria-controls="day-2026-09-23">2026-09-23<span class="n">25</span></button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-09-22">2026-09-22<span class="n">22</span></button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-09-21">2026-09-21<span class="n">21</span></button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-09-20">2026-09-20<span class="n">32</span></button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-09-19">2026-09-19<span class="n">30</span></button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-09-18">2026-09-18<span class="n">35</span></button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-09-17">2026-09-17<span class="n">33</span></button>
-    <button class="tab" role="tab" aria-selected="false" aria-controls="day-2026-09-16">2026-09-16<span class="n">31</span></button>
   </div>
-  <section class="day" id="day-2026-09-22" role="tabpanel">
+  <section class="day" id="day-2026-09-23" role="tabpanel">
+  <p class="day-sum">16 AI industry · 9 general tech</p>
+  <div class="sec-head">AI industry</div>
+  <div class="cat-head">Anthropic / Claude</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">01</span>
+      <h2><a href="https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/" target="_blank" rel="noopener">Anthropic launches Claude Opus 5.5: Fable 5.1-level performance at $4/$20 per MTok</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">Anthropic released Claude Opus 5.5 (claude-opus-5-5) on 09-22, aimed at long-running agentic coding and knowledge work. It matches Fable 5.1 on benchmarks and is priced at $4/M input and $20/M output, down from Opus 5&#x27;s $5/$25, with cache reads 60% cheaper. It has a 1M-token context by default, 128k max output, and adaptive thinking that is always on (thinking:disabled returns a 400). Available on the Claude API, Amazon Bedrock, Claude Platform on AWS/Google Cloud and Microsoft Foundry. It is Anthropic&#x27;s first model since Amodei called for an industry slowdown.</p>
+    <ul class="points">
+      <li>$4/$20 per MTok (Opus 5: $5/$25), cached input $0.20/M, 1M context, 128k output</li>
+      <li>Computer use now requires computer_toolset_20260801 on API/Google Cloud (old toolset returns 400)</li>
+      <li>New: fast mode research preview and inline mid-conversation tool definitions (beta)</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/" target="_blank" rel="noopener">techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance</a></span>
+      <div class="kw"><span>anthropic</span><span>opus-5.5</span><span>model-launch</span><span>pricing</span><span>agentic-coding</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">02</span>
+      <h2><a href="https://simonwillison.net/2026/Sep/22/llm/" target="_blank" rel="noopener">Simon Willison: Opus 5.5 &#x27;max&#x27; thinking hits the 128K limit mid-reasoning</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">In early hands-on testing, Simon Willison found that Opus 5.5&#x27;s &#x27;max&#x27; thinking level used up the 128K output-token limit partway through reasoning on a test task, and called that setting &#x27;effectively useless&#x27;. The same day, llm-anthropic 0.29 added Opus 5.5 support to his llm CLI.</p>
+    <ul class="points">
+      <li>&#x27;max&#x27; thinking exhausted 128K tokens before answering</li>
+      <li>Lower thinking levels are the practical choice for now</li>
+      <li>llm-anthropic 0.29 ships Opus 5.5 support</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://simonwillison.net/2026/Sep/22/llm/" target="_blank" rel="noopener">simonwillison.net/2026/Sep/22/llm</a></span>
+      <div class="kw"><span>anthropic</span><span>opus-5.5</span><span>thinking</span><span>review</span><span>llm-cli</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">03</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQcTZBdHBZTVk2UDV0d3F0c0ZJeC1nMnMzNC1lQkhBSmZReGZoNU52S3M0ZjVyVzIxQk9MNVFvemZXLWh4dHMzYjVBdUJaXzR1UThzcnNFYVRJeVFWZndJcHoxVjBFZTJscWZSRTd3cmR4UVRpRHdDeUMzYkRkMVR2NHUxZFdPSjc1RTRhdnczb01sSkFVdk9J?oc=5" target="_blank" rel="noopener">Anthropic confirms physical biology lab to test Claude in real-world science</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">TechRepublic reports Anthropic is building a physical biology lab to test what Claude can actually do in real scientific settings. A single other source places the lab in the Bay Area.</p>
+    <ul class="points">
+      <li>Wet lab to test Claude&#x27;s real-world scientific capability</li>
+      <li>Bay Area location from a single source, unconfirmed</li>
+      <li>Lands alongside stricter bio safeguards in Opus 5.5</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQcTZBdHBZTVk2UDV0d3F0c0ZJeC1nMnMzNC1lQkhBSmZReGZoNU52S3M0ZjVyVzIxQk9MNVFvemZXLWh4dHMzYjVBdUJaXzR1UThzcnNFYVRJeVFWZndJcHoxVjBFZTJscWZSRTd3cmR4UVRpRHdDeUMzYkRkMVR2NHUxZFdPSjc1RTRhdnczb01sSkFVdk9J?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMilwFBVV95cUxQcTZBdHBZTVk2UDV0d3F0c0ZJeC1nMnMzNC1lQkhBSmZReGZoNU52S3M0ZjVyVzIxQk9MNVFvemZXLWh4dHMzYjVBdUJaXzR1UThzcnNFYVRJeVFWZndJcHoxVjBFZTJscWZSRTd3cmR4UVRpRHdDeUMzYkRkMVR2NHUxZFdPSjc1RTRhdnczb01sSkFVdk9J?oc=5</a></span>
+      <div class="kw"><span>anthropic</span><span>biology</span><span>lab</span><span>science</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">04</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1hSlNaZU5CMXdjOERiMTltcEVxMXduUXVrT1UtSExlUGlUUHFCc2huOVM0NEY0cmhCMVF6X0o2QjMwUUZOQkhuSGlHVjFlaWdKelR3ZTEzUV9SRzRIdkxhV3RfQ0N2OUI5U214a0RqZjh3c2MxUktr?oc=5" target="_blank" rel="noopener">Anthropic publishes measurements for tracking AI development pace inside frontier labs</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">Anthropic published a post, on the same day as the Opus 5.5 launch, proposing measurements for tracking how fast capability is developing inside frontier labs. It continues the slowdown and pacing thread from last week. Coverage did not detail the specific metrics.</p>
+    <ul class="points">
+      <li>Proposed metrics for pace of frontier development</li>
+      <li>Same day as the Opus 5.5 launch</li>
+      <li>Continues the pacing debate</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1hSlNaZU5CMXdjOERiMTltcEVxMXduUXVrT1UtSExlUGlUUHFCc2huOVM0NEY0cmhCMVF6X0o2QjMwUUZOQkhuSGlHVjFlaWdKelR3ZTEzUV9SRzRIdkxhV3RfQ0N2OUI5U214a0RqZjh3c2MxUktr?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMid0FVX3lxTE1hSlNaZU5CMXdjOERiMTltcEVxMXduUXVrT1UtSExlUGlUUHFCc2huOVM0NEY0cmhCMVF6X0o2QjMwUUZOQkhuSGlHVjFlaWdKelR3ZTEzUV9SRzRIdkxhV3RfQ0N2OUI5U214a0RqZjh3c2MxUktr?oc=5</a></span>
+      <div class="kw"><span>anthropic</span><span>policy</span><span>pacing</span><span>measurement</span></div>
+    </div>
+  </article>
+  <div class="cat-head">OpenAI / ChatGPT</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">05</span>
+      <h2><a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" target="_blank" rel="noopener">OpenAI launches GPT-6 Sol ($2/$10) and GPT-6 Luna ($0.10/$0.50), 90 minutes after Opus 5.5</a></h2>
+      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
+    </div>
+    <p class="summary">OpenAI released GPT-6 Sol and GPT-6 Luna on 09-22 as coding- and clerical-focused extensions of the GPT-6 Astra line, about 90 minutes after Anthropic announced Opus 5.5. OpenAI says Sol makes about half as many mistakes as its predecessor and reaches &#x27;Astra-level reliability&#x27;. Both are rolling out to ChatGPT Work, Codex and the API, and Luna is also coming to Free/Go tiers and the desktop app.</p>
+    <ul class="points">
+      <li>Sol $2/M in, $10/M out; Luna $0.10/M in, $0.50/M out</li>
+      <li>Sol: about 50% fewer mistakes, &#x27;Astra-level&#x27; reliability</li>
+      <li>Luna comes to the free tier; llm 0.36 already supports both</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" target="_blank" rel="noopener">techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna</a></span>
+      <div class="kw"><span>openai</span><span>gpt-6-sol</span><span>gpt-6-luna</span><span>model-launch</span><span>pricing</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">06</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9nbW0taEVXNk5mVGJEUFVfblJWTURKUmV0M00wMnJ2MXZ1ek9ETHBKLXdrR2kyR0hFM0FIMndDel91Rko3MlIxQUF5SERyTWF6VlZ6X3QyUlNIR2JUMTdGdjhBeWdYMERxT19oVHZTS18?oc=5" target="_blank" rel="noopener">OpenAI outlines AI advertising plans; Equativ to bring ChatGPT Ads to brands</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">OpenAI published &#x27;Reimagining advertising with AI&#x27;, which lays out its approach to AI-driven ads. Separately, ad-tech firm Equativ is reported as a technology partner bringing ChatGPT Ads to brands.</p>
+    <ul class="points">
+      <li>Official OpenAI post on its advertising approach</li>
+      <li>Equativ named as ChatGPT Ads partner</li>
+      <li>Monetization push beyond subscriptions</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9nbW0taEVXNk5mVGJEUFVfblJWTURKUmV0M00wMnJ2MXZ1ek9ETHBKLXdrR2kyR0hFM0FIMndDel91Rko3MlIxQUF5SERyTWF6VlZ6X3QyUlNIR2JUMTdGdjhBeWdYMERxT19oVHZTS18?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMicEFVX3lxTE9nbW0taEVXNk5mVGJEUFVfblJWTURKUmV0M00wMnJ2MXZ1ek9ETHBKLXdrR2kyR0hFM0FIMndDel91Rko3MlIxQUF5SERyTWF6VlZ6X3QyUlNIR2JUMTdGdjhBeWdYMERxT19oVHZTS18?oc=5</a></span>
+      <div class="kw"><span>openai</span><span>chatgpt-ads</span><span>advertising</span><span>monetization</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">07</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1sYU85M1h2UmRpRWhzdWdqNGFrM0gycTJBR2YyMm80VU1MdTFuQUFieVFhb2hZV0tIM1RRc3RiV0JRWDJvbl9RQWNvMlRLMFJDRlg2Nm93TG0xbFZqekVVa1g4MVNtM3RFdm1OaGpJVEFRZkNGZGdmRWVfZzR6TVU?oc=5" target="_blank" rel="noopener">Researchers reportedly breached OpenAI systems in under 72 hours using Claude</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">CBS News reports that three security researchers breached OpenAI&#x27;s systems in under 72 hours, using Anthropic&#x27;s Claude rather than an OpenAI tool. CBS presents it as evidence of security gaps at frontier labs.</p>
+    <ul class="points">
+      <li>Three researchers, under 72 hours</li>
+      <li>Used a rival lab&#x27;s model as the attack tool</li>
+      <li>Adds to frontier-lab security concerns</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1sYU85M1h2UmRpRWhzdWdqNGFrM0gycTJBR2YyMm80VU1MdTFuQUFieVFhb2hZV0tIM1RRc3RiV0JRWDJvbl9RQWNvMlRLMFJDRlg2Nm93TG0xbFZqekVVa1g4MVNtM3RFdm1OaGpJVEFRZkNGZGdmRWVfZzR6TVU?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMif0FVX3lxTE1sYU85M1h2UmRpRWhzdWdqNGFrM0gycTJBR2YyMm80VU1MdTFuQUFieVFhb2hZV0tIM1RRc3RiV0JRWDJvbl9RQWNvMlRLMFJDRlg2Nm93TG0xbFZqekVVa1g4MVNtM3RFdm1OaGpJVEFRZkNGZGdmRWVfZzR6TVU?oc=5</a></span>
+      <div class="kw"><span>openai</span><span>security</span><span>breach</span><span>claude</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">08</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSS1qNE1mSDl2Y2h3S1dEX0JQYlo0b29XMWpzXzdZOF83MU1SNmhWMi1YMmlzQzdNVzlFMFpYWFd2cmt3UWU2NE9OYnVkLThfcGpqMUVqR0p1dzhITkh3ZkdCZDdvekVyVExBTV8wTy1NOC1YLVdUWlpHb1REUjVkU3JDLUpILTJPc1hUWFk2STVtSFN6S082eE1tWFhJSEhHV3VHN3pQcEVpSTliXzh3QW5kWjUtSVJxd0hv?oc=5" target="_blank" rel="noopener">NYU mathematician accuses OpenAI of co-opting fluid-dynamics proof breakthrough</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">An NYU mathematician publicly accused OpenAI of &#x27;co-opting&#x27; an AI-assisted fluid-dynamics proof, escalating the dispute over OpenAI&#x27;s claim that its models solved 100+ open problems including Navier-Stokes. OpenAI has still not published a formal proof. This comes days after it formed its advisory-only math group at IAS.</p>
+    <ul class="points">
+      <li>Credit dispute over fluid-dynamics proof</li>
+      <li>Still no formal Navier-Stokes proof published</li>
+      <li>Follows criticism of the IAS advisory group</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSS1qNE1mSDl2Y2h3S1dEX0JQYlo0b29XMWpzXzdZOF83MU1SNmhWMi1YMmlzQzdNVzlFMFpYWFd2cmt3UWU2NE9OYnVkLThfcGpqMUVqR0p1dzhITkh3ZkdCZDdvekVyVExBTV8wTy1NOC1YLVdUWlpHb1REUjVkU3JDLUpILTJPc1hUWFk2STVtSFN6S082eE1tWFhJSEhHV3VHN3pQcEVpSTliXzh3QW5kWjUtSVJxd0hv?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMiuwFBVV95cUxQSS1qNE1mSDl2Y2h3S1dEX0JQYlo0b29XMWpzXzdZOF83MU1SNmhWMi1YMmlzQzdNVzlFMFpYWFd2cmt3UWU2NE9OYnVkLThfcGpqMUVqR0p1dzhITkh3ZkdCZDdvekVyVExBTV8wTy1NOC1YLVdUWlpHb1REUjVkU3JDLUpILTJPc1hUWFk2STVtSFN6S082eE1tWFhJSEhHV3VHN3pQcEVpSTliXzh3QW5kWjUtSVJxd0hv?oc=5</a></span>
+      <div class="kw"><span>openai</span><span>mathematics</span><span>navier-stokes</span><span>credit-dispute</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">09</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOUp0RVFtX3lZMmtiekRfMHNpMnVMLVdlX3NqSlU0NWdldTl3VUxWRGs1S2h5WlZ2NkluVDlzTkhRZERNMU01ZEg2ZWgyVllNOXhSRVRzczFfUjV5QXJtbXN2eDVoenczQ3M3OFMzNk1vVWg5T1U2WUJMV2w1NkFTUTR3M2UwNGp6bkhteXd5Vm9adGladkp2TllOMGIzUXNNZ0tXR2d4OFpWVGFIeWRUZk9zY1RJQmR6?oc=5" target="_blank" rel="noopener">Lawsuit asks OpenAI to fund a new school after ChatGPT linked to shooting</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Ars Technica reports a lawsuit seeking to make OpenAI pay for a replacement school after ChatGPT was allegedly involved in a shooting. It adds to the growing product-liability pressure on chatbot makers.</p>
+    <ul class="points">
+      <li>Plaintiffs seek funding for a replacement school</li>
+      <li>ChatGPT allegedly involved in the incident</li>
+      <li>Liability exposure for consumer chatbots</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOUp0RVFtX3lZMmtiekRfMHNpMnVMLVdlX3NqSlU0NWdldTl3VUxWRGs1S2h5WlZ2NkluVDlzTkhRZERNMU01ZEg2ZWgyVllNOXhSRVRzczFfUjV5QXJtbXN2eDVoenczQ3M3OFMzNk1vVWg5T1U2WUJMV2w1NkFTUTR3M2UwNGp6bkhteXd5Vm9adGladkp2TllOMGIzUXNNZ0tXR2d4OFpWVGFIeWRUZk9zY1RJQmR6?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMiuAFBVV95cUxPOUp0RVFtX3lZMmtiekRfMHNpMnVMLVdlX3NqSlU0NWdldTl3VUxWRGs1S2h5WlZ2NkluVDlzTkhRZERNMU01ZEg2ZWgyVllNOXhSRVRzczFfUjV5QXJtbXN2eDVoenczQ3M3OFMzNk1vVWg5T1U2WUJMV2w1NkFTUTR3M2UwNGp6bkhteXd5Vm9adGladkp2TllOMGIzUXNNZ0tXR2d4OFpWVGFIeWRUZk9zY1RJQmR6?oc=5</a></span>
+      <div class="kw"><span>openai</span><span>lawsuit</span><span>liability</span><span>chatgpt</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Google Gemini / DeepMind</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">10</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOWmk2cjNEYUpPS1hJck0xVElmTDJvVUFGM0NhWUpGa1YtbUZlLVBnZmxLYzlQS3ZBbW5lOUlhUENxdFJ3Sjk5YWU4dS1uSW14Sk8xWVRXbmk0Y0tJUmRUM2NWMjA4Yi1hNlRZbU1OdmoyamE0Q2dJbzFHMTI0QUtVUlR2dWJoR1d5d1R5Q0dzMG50eWtaeE1HctIBngFBVV95cUxOVTdUSmJ2QTIxWFhVU1cwcVRkc2tEUkVBdzJ1Z3BieHhtUEhVMVpzLW52YUhQbTdITmZfZ1dWcXA3aF9QRFJoa3htNERZbFdPYmdkNkZDdEkzUHh1dWZPRjVNNTN3WmFyU2JlMjhGOHFiQmFqOTkwTHFqQ1QxTHZoeVJXeXBhcGVaaUkxeVlWSVF4SGtWMkRyMTFqc001dw?oc=5" target="_blank" rel="noopener">Comscore: ChatGPT&#x27;s share of LLM usage falls as Gemini and Claude gain</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Comscore data reported by Tubefilter and TheDesk shows ChatGPT&#x27;s overall share of LLM usage declining while Google Gemini and Anthropic&#x27;s Claude gain ground. The coverage did not give specific percentages. No Gemini product posts or API changelog entries appeared in the 09-21 to 09-23 window (latest changelog entry 09-18).</p>
+    <ul class="points">
+      <li>ChatGPT share declining per Comscore</li>
+      <li>Gemini and Claude both gaining</li>
+      <li>No new Gemini blog or API changelog entries today</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOWmk2cjNEYUpPS1hJck0xVElmTDJvVUFGM0NhWUpGa1YtbUZlLVBnZmxLYzlQS3ZBbW5lOUlhUENxdFJ3Sjk5YWU4dS1uSW14Sk8xWVRXbmk0Y0tJUmRUM2NWMjA4Yi1hNlRZbU1OdmoyamE0Q2dJbzFHMTI0QUtVUlR2dWJoR1d5d1R5Q0dzMG50eWtaeE1HctIBngFBVV95cUxOVTdUSmJ2QTIxWFhVU1cwcVRkc2tEUkVBdzJ1Z3BieHhtUEhVMVpzLW52YUhQbTdITmZfZ1dWcXA3aF9QRFJoa3htNERZbFdPYmdkNkZDdEkzUHh1dWZPRjVNNTN3WmFyU2JlMjhGOHFiQmFqOTkwTHFqQ1QxTHZoeVJXeXBhcGVaaUkxeVlWSVF4SGtWMkRyMTFqc001dw?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMimAFBVV95cUxOWmk2cjNEYUpPS1hJck0xVElmTDJvVUFGM0NhWUpGa1YtbUZlLVBnZmxLYzlQS3ZBbW5lOUlhUENxdFJ3Sjk5YWU4dS1uSW14Sk8xWVRXbmk0Y0tJUmRUM2NWMjA4Yi1hNlRZbU1OdmoyamE0Q2dJbzFHMTI0QUtVUlR2dWJoR1d5d1R5Q0dzMG50eWtaeE1HctIBngFBVV95cUxOVTdUSmJ2QTIxWFhVU1cwcVRkc2tEUkVBdzJ1Z3BieHhtUEhVMVpzLW52YUhQbTdITmZfZ1dWcXA3aF9QRFJoa3htNERZbFdPYmdkNkZDdEkzUHh1dWZPRjVNNTN3WmFyU2JlMjhGOHFiQmFqOTkwTHFqQ1QxTHZoeVJXeXBhcGVaaUkxeVlWSVF4SGtWMkRyMTFqc001dw?oc=5</a></span>
+      <div class="kw"><span>gemini</span><span>market-share</span><span>comscore</span><span>chatgpt</span><span>claude</span></div>
+    </div>
+  </article>
+  <div class="cat-head">xAI / Grok</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">11</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPM2JUUEZYZnVpYWotNHAyX1dvZ040bFhnUkJpdE9iYzNxTmNMb01tV2ZiX3RUcmZlVkIyVHlNd0wycWEyclBfSjFRQmdoNEZBdmtFOWdhY1ZzcGh3RnYzdjhxaVZ5aGxsMlJybGh5VG1LWThoRXFvZGhRdTNzRndtbmZ1d0hfX0xkal9QSHJUaUtDV01naVh1TnhQNl8yOUp2dF9WNkpmUEF0Zk1MMWtLeUhLUQ?oc=5" target="_blank" rel="noopener">Grok Bot passes 400,000 weekly active users; expands into SpaceX support and Tesla vehicles</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Bloomberg reports xAI&#x27;s Grok Bot agent passed 400,000 weekly active users about a month after launch. xAI described SpaceX using Grok Bot to scale customer support, and Tesla is integrating it into vehicles for hands-free errands.</p>
+    <ul class="points">
+      <li>400K WAU in about the first month</li>
+      <li>SpaceX customer-support deployment</li>
+      <li>Tesla in-car integration for hands-free tasks</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPM2JUUEZYZnVpYWotNHAyX1dvZ040bFhnUkJpdE9iYzNxTmNMb01tV2ZiX3RUcmZlVkIyVHlNd0wycWEyclBfSjFRQmdoNEZBdmtFOWdhY1ZzcGh3RnYzdjhxaVZ5aGxsMlJybGh5VG1LWThoRXFvZGhRdTNzRndtbmZ1d0hfX0xkal9QSHJUaUtDV01naVh1TnhQNl8yOUp2dF9WNkpmUEF0Zk1MMWtLeUhLUQ?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMiswFBVV95cUxPM2JUUEZYZnVpYWotNHAyX1dvZ040bFhnUkJpdE9iYzNxTmNMb01tV2ZiX3RUcmZlVkIyVHlNd0wycWEyclBfSjFRQmdoNEZBdmtFOWdhY1ZzcGh3RnYzdjhxaVZ5aGxsMlJybGh5VG1LWThoRXFvZGhRdTNzRndtbmZ1d0hfX0xkal9QSHJUaUtDV01naVh1TnhQNl8yOUp2dF9WNkpmUEF0Zk1MMWtLeUhLUQ?oc=5</a></span>
+      <div class="kw"><span>grok</span><span>xai</span><span>grok-bot</span><span>tesla</span><span>spacex</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Other AI industry</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">12</span>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/" target="_blank" rel="noopener">ClosedQuorum Windows malware uses Gemini, DeepSeek, Qwen and Mistral to pick attack steps</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">BleepingComputer reports that researchers found ClosedQuorum, a Windows malware strain that queries several LLMs (Gemini, DeepSeek, Qwen, Mistral) to decide its next actions autonomously after compromise. It is a concrete case of attackers building LLMs into live intrusion tooling.</p>
+    <ul class="points">
+      <li>Multi-LLM decision loop in post-compromise phase</li>
+      <li>Uses Gemini, DeepSeek, Qwen, Mistral</li>
+      <li>Emerging AI-driven malware pattern</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/" target="_blank" rel="noopener">www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions</a></span>
+      <div class="kw"><span>malware</span><span>security</span><span>llm-abuse</span><span>windows</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">13</span>
+      <h2><a href="https://news.google.com/rss/articles/CBMiigJBVV95cUxNSm5PS0ppY09icUcxckZLeFozMElJT3V5UTFwZkxVbWR5UEhYejE1MVhYamc2M1hoLUtsYlVuVkVibWtRbXBpQnJ2TlZ4cGQzcnVsR3lKdVJUdVh6Wm5iTi1iU1RKVV9GcnVLaEs4OU4tcHNjWFhick8xdnRoV0N1ekppRUVVakREN1YtSmZGUmR2UHJmS2lDeU5QR2VScUtocEwxR2hNejU1UlFiVnlGY0ZCLWhydV9vN1VJZFlSSEcxZEpMYlNYMEVtS1N0RnVwTjA0OEhOYzlxRXhqUzBVc084QUdRaXFSVVJnVmJRWTFyZ0hUMWJPcDhEN0Y0eGdBWEJTUFpzcXVqUQ?oc=5" target="_blank" rel="noopener">Palo Alto Unit 42 ships Anthropic Mythos and OpenAI GPT-5.6 in new frontier AI defense service</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Palo Alto Networks launched Unit 42 Continuous Frontier AI Defense, which gives customers access to Anthropic&#x27;s Mythos and OpenAI&#x27;s GPT-5.6 for security operations. Reuters confirmed the service uses both Claude and GPT models.</p>
+    <ul class="points">
+      <li>Mythos and GPT-5.6 delivered via Unit 42</li>
+      <li>Multi-vendor frontier models in a security service</li>
+      <li>Enterprise distribution for Mythos</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://news.google.com/rss/articles/CBMiigJBVV95cUxNSm5PS0ppY09icUcxckZLeFozMElJT3V5UTFwZkxVbWR5UEhYejE1MVhYamc2M1hoLUtsYlVuVkVibWtRbXBpQnJ2TlZ4cGQzcnVsR3lKdVJUdVh6Wm5iTi1iU1RKVV9GcnVLaEs4OU4tcHNjWFhick8xdnRoV0N1ekppRUVVakREN1YtSmZGUmR2UHJmS2lDeU5QR2VScUtocEwxR2hNejU1UlFiVnlGY0ZCLWhydV9vN1VJZFlSSEcxZEpMYlNYMEVtS1N0RnVwTjA0OEhOYzlxRXhqUzBVc084QUdRaXFSVVJnVmJRWTFyZ0hUMWJPcDhEN0Y0eGdBWEJTUFpzcXVqUQ?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMiigJBVV95cUxNSm5PS0ppY09icUcxckZLeFozMElJT3V5UTFwZkxVbWR5UEhYejE1MVhYamc2M1hoLUtsYlVuVkVibWtRbXBpQnJ2TlZ4cGQzcnVsR3lKdVJUdVh6Wm5iTi1iU1RKVV9GcnVLaEs4OU4tcHNjWFhick8xdnRoV0N1ekppRUVVakREN1YtSmZGUmR2UHJmS2lDeU5QR2VScUtocEwxR2hNejU1UlFiVnlGY0ZCLWhydV9vN1VJZFlSSEcxZEpMYlNYMEVtS1N0RnVwTjA0OEhOYzlxRXhqUzBVc084QUdRaXFSVVJnVmJRWTFyZ0hUMWJPcDhEN0Y0eGdBWEJTUFpzcXVqUQ?oc=5</a></span>
+      <div class="kw"><span>palo-alto</span><span>unit-42</span><span>mythos</span><span>gpt-5.6</span><span>security</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">14</span>
+      <h2><a href="https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/" target="_blank" rel="noopener">Meta admits Muse&#x27;s likeness to OpenClaw is intentional</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Meta acknowledged that its Muse assistant was deliberately modeled on OpenClaw, in response to direct comparisons between the two. Muse&#x27;s fast growth continues to draw comparisons with ChatGPT&#x27;s early trajectory.</p>
+    <ul class="points">
+      <li>Meta confirms Muse design borrowed from OpenClaw</li>
+      <li>Muse growth still outpacing early ChatGPT</li>
+      <li>Follows the Amazon agent-block story</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/" target="_blank" rel="noopener">techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence</a></span>
+      <div class="kw"><span>meta</span><span>muse</span><span>openclaw</span><span>assistants</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">15</span>
+      <h2><a href="https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/" target="_blank" rel="noopener">Snorkel AI triples valuation to $3.5B on training-data demand</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Snorkel AI&#x27;s valuation has tripled to $3.5 billion, reflecting strong demand for high-quality AI training data and data-labeling infrastructure.</p>
+    <ul class="points">
+      <li>Valuation up 3x to $3.5B</li>
+      <li>Training-data market booming</li>
+      <li>Data infra as a model-race supplier</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/" target="_blank" rel="noopener">techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms</a></span>
+      <div class="kw"><span>snorkel-ai</span><span>funding</span><span>training-data</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">16</span>
+      <h2><a href="https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/" target="_blank" rel="noopener">Qualcomm launches two AI-focused smartphone chips</a></h2>
+      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
+    </div>
+    <p class="summary">Qualcomm introduced two new smartphone processors that prioritize on-device AI, continuing the move toward running AI at the edge on mobile.</p>
+    <ul class="points">
+      <li>Two new mobile SoCs</li>
+      <li>On-device AI emphasis</li>
+      <li>Edge inference trend</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/" target="_blank" rel="noopener">techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai</a></span>
+      <div class="kw"><span>qualcomm</span><span>chips</span><span>on-device-ai</span></div>
+    </div>
+  </article>
+  <div class="sec-head">General tech</div>
+  <div class="cat-head">AI / ML</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">17</span>
+      <h2><a href="https://huggingface.co/papers/2609.24972" target="_blank" rel="noopener">RRSI: regularized recursive self-improvement of agent harnesses</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">A top-voted HF paper from Google proposes regularized self-improvement loops for agent harnesses, letting agents improve their own scaffolding without drifting or diverging. It targets controlled scaling of agentic systems.</p>
+    <ul class="points">
+      <li>Agents iteratively improve their own harness</li>
+      <li>Regularization prevents divergence</li>
+      <li>Top of HF Papers today</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2609.24972" target="_blank" rel="noopener">huggingface.co/papers/2609.24972</a></span>
+      <div class="kw"><span>agents</span><span>self-improvement</span><span>harness</span><span>paper</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">18</span>
+      <h2><a href="https://huggingface.co/papers/2609.24984" target="_blank" rel="noopener">WorldCrafter: consistent video world model with implicit 3D-aware memory</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">A TencentARC paper introduces a video world model that keeps an implicit 3D-aware memory to preserve spatial and temporal consistency across long generations, a core open problem in generative video.</p>
+    <ul class="points">
+      <li>Implicit 3D memory for scene consistency</li>
+      <li>Long-horizon video coherence</li>
+      <li>World-model direction for generative video</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2609.24984" target="_blank" rel="noopener">huggingface.co/papers/2609.24984</a></span>
+      <div class="kw"><span>world-models</span><span>video-generation</span><span>3d</span><span>paper</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">19</span>
+      <h2><a href="https://interconnects.ai/p/the-current-balance-of-power-in-open" target="_blank" rel="noopener">Interconnects: the current balance of power in open models</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Nathan Lambert argues that Chinese labs now account for over 80% of open-weight model usage on OpenRouter and trail the frontier by 2-5 months, versus 6-9 months for US open models. The gap keeps widening despite new US investment.</p>
+    <ul class="points">
+      <li>Chinese open models: 80%+ OpenRouter usage share</li>
+      <li>2-5 month lag vs frontier, US open 6-9 months</li>
+      <li>Alibaba and DeepSeek extending lead</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://interconnects.ai/p/the-current-balance-of-power-in-open" target="_blank" rel="noopener">interconnects.ai/p/the-current-balance-of-power-in-open</a></span>
+      <div class="kw"><span>open-models</span><span>china</span><span>openrouter</span><span>geopolitics</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">20</span>
+      <h2><a href="https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/" target="_blank" rel="noopener">Will OpenAI eat Jev&#x27;s lunch? Classifier models vs generalist fast-follow</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">An essay on Jev, a model that returns instant, calibrated classifications instead of generated text. The author argues OpenAI could copy it quickly, since tool-calling LLMs have acted as implicit classifiers for years.</p>
+    <ul class="points">
+      <li>Classification-first model for instant decisions</li>
+      <li>Calibrated outputs as the differentiator</li>
+      <li>Fast-follow risk from frontier labs</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/" target="_blank" rel="noopener">arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch</a></span>
+      <div class="kw"><span>classification</span><span>llm</span><span>startups</span><span>strategy</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">21</span>
+      <h2><a href="https://huggingface.co/papers/2609.22966" target="_blank" rel="noopener">Transferring VLM intelligence to robotic control</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">A multi-institution HF paper applies vision-language model capabilities directly to robot control, connecting multimodal scene understanding with embodied action.</p>
+    <ul class="points">
+      <li>VLM reasoning transferred to control policies</li>
+      <li>Embodied AI bridge</li>
+      <li>Multi-institution collaboration</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2609.22966" target="_blank" rel="noopener">huggingface.co/papers/2609.22966</a></span>
+      <div class="kw"><span>robotics</span><span>vlm</span><span>embodied-ai</span><span>paper</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">22</span>
+      <h2><a href="https://huggingface.co/papers/2609.25001" target="_blank" rel="noopener">GameHorizon: multi-horizon dataset and evaluation for gameplay agents</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Tencent releases a dataset and evaluation framework for agents playing games that require reasoning over long sequences of decisions at several time horizons.</p>
+    <ul class="points">
+      <li>Multi-horizon gameplay tasks</li>
+      <li>Long-sequence agent reasoning benchmark</li>
+      <li>Dataset plus eval framework</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2609.25001" target="_blank" rel="noopener">huggingface.co/papers/2609.25001</a></span>
+      <div class="kw"><span>agents</span><span>benchmark</span><span>games</span><span>paper</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">23</span>
+      <h2><a href="https://huggingface.co/papers/2609.23088" target="_blank" rel="noopener">OmniEdu: open foundation models for learning and teaching</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Peking University releases open foundation models tuned for education, covering both learning and teaching use cases.</p>
+    <ul class="points">
+      <li>Education-specific open models</li>
+      <li>Domain tuning for teaching and learning</li>
+      <li>Open weights</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://huggingface.co/papers/2609.23088" target="_blank" rel="noopener">huggingface.co/papers/2609.23088</a></span>
+      <div class="kw"><span>education</span><span>foundation-models</span><span>open-weights</span><span>paper</span></div>
+    </div>
+  </article>
+  <div class="cat-head">Hard tech</div>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">24</span>
+      <h2><a href="https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years/" target="_blank" rel="noopener">Lemire: how AMD Ryzen got 50% faster in two years</a></h2>
+      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
+    </div>
+    <p class="summary">Daniel Lemire breaks down where Zen 5&#x27;s gains came from: wider dispatch (6 to 8 instructions per cycle), a doubled L2 cache, extra integer ALUs and SIMD doubled from 256 to 512 bits. Microarchitecture, not clock speed, drove the speedup.</p>
+    <ul class="points">
+      <li>Dispatch widened 6 to 8 instr/cycle</li>
+      <li>L2 doubled, extra integer ALUs</li>
+      <li>Full 512-bit SIMD</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years/" target="_blank" rel="noopener">lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years</a></span>
+      <div class="kw"><span>cpu</span><span>zen-5</span><span>microarchitecture</span><span>performance</span></div>
+    </div>
+  </article>
+  <article class="item">
+    <div class="item-top">
+      <span class="rank">25</span>
+      <h2><a href="https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/" target="_blank" rel="noopener">Trail of Bits: SAML, a fractal of bad design</a></h2>
+      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
+    </div>
+    <p class="summary">Trail of Bits lists SAML&#x27;s structural flaws: XML complexity, canonicalization and enveloped signatures that enable parser-differential attacks, kitchen-sink scope, and an ossified design that fits poorly with modern mobile flows. It recommends OIDC as the cleaner alternative.</p>
+    <ul class="points">
+      <li>Parser-differential attacks via XML signatures</li>
+      <li>Unused feature surface widens attack area</li>
+      <li>OIDC recommended instead</li>
+    </ul>
+    <div class="foot">
+      <span class="src"><a href="https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/" target="_blank" rel="noopener">blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design</a></span>
+      <div class="kw"><span>security</span><span>saml</span><span>oidc</span><span>authentication</span></div>
+    </div>
+  </article>
+  </section>
+  <section class="day" id="day-2026-09-22" role="tabpanel" hidden>
   <p class="day-sum">12 AI industry · 10 general tech</p>
   <div class="sec-head">AI industry</div>
   <div class="cat-head">Anthropic / Claude</div>
@@ -3029,525 +3466,7 @@
     </div>
   </article>
   </section>
-  <section class="day" id="day-2026-09-16" role="tabpanel" hidden>
-  <p class="day-sum">23 AI industry · 8 general tech</p>
-  <div class="sec-head">AI industry</div>
-  <div class="cat-head">Anthropic / Claude</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">01</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNamhBSWgtcmZwTVRVOXlnbGZMN2R1bDFlMWEtV21wUXFmUGVoWW5vQWNVbU55OEE0T0lWMUFlMXFZVGdvNmN0TElFUGNkQUlwQ01hU09aUEZIZlBjd0lMbGJMOVJHbmhOSTNRaHU0cXBnNmRVQ2lTb21odDUzOGlRQ1phSTRDUDVucThHQjNncjI1Q1pMOVV0WlotdDVpUdIBowFBVV95cUxNQW5ST21vbGJyUWYzcHVFZFJOZUgzTEJ3TWFkS3Y4Nm9fQ2w3c3puMnJqaFBpbl9CVG5Gd1RSZUVGQmJqLVZaN0dBZ0dOWEZNb3IxMDBtaGhWNGllb29aZERqeGxibHhnakZJRDgxeF9oa1NDSGV2YzYwa3plQ0dhZU43aHJNb1MyUlZRRm1hb1BZRVpZRVF4LUd1OWNQXzJpZFpr?oc=5" target="_blank" rel="noopener">Amodei vs Huang at Dreamforce: Nvidia calls Anthropic&#x27;s antitrust-waiver plan &#x27;completely unnecessary&#x27;</a></h2>
-      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
-    </div>
-    <p class="summary">Salesforce&#x27;s Dreamforce keynote turned into a public split on AI safety. Dario Amodei renewed his call to pace frontier development, compared AI safety to car safety, and said Anthropic is opening up to auditors. Jensen Huang rejected regulation outright (&#x27;leave safety to us&#x27;) and called the proposed antitrust waiver for safety coordination unnecessary; Sam Altman told the BBC the world is &#x27;right to be afraid&#x27; but &#x27;should trust&#x27; AI firms. Zuckerberg separately took aim at Anthropic over the slowdown push, and Trump advisers met an Anthropic executive on the proposal.</p>
-    <ul class="points">
-      <li>Two camps now explicit: Anthropic/OpenAI slowdown + verification vs Nvidia/White House acceleration</li>
-      <li>Bloomberg: safety push risks a &#x27;regulatory wall&#x27; for smaller rivals; Wall Street shrugs, AI capex intact</li>
-      <li>Jack Clark to BBC: AI kill switches may need to be mandatory</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNamhBSWgtcmZwTVRVOXlnbGZMN2R1bDFlMWEtV21wUXFmUGVoWW5vQWNVbU55OEE0T0lWMUFlMXFZVGdvNmN0TElFUGNkQUlwQ01hU09aUEZIZlBjd0lMbGJMOVJHbmhOSTNRaHU0cXBnNmRVQ2lTb21odDUzOGlRQ1phSTRDUDVucThHQjNncjI1Q1pMOVV0WlotdDVpUdIBowFBVV95cUxNQW5ST21vbGJyUWYzcHVFZFJOZUgzTEJ3TWFkS3Y4Nm9fQ2w3c3puMnJqaFBpbl9CVG5Gd1RSZUVGQmJqLVZaN0dBZ0dOWEZNb3IxMDBtaGhWNGllb29aZERqeGxibHhnakZJRDgxeF9oa1NDSGV2YzYwa3plQ0dhZU43aHJNb1MyUlZRRm1hb1BZRVpZRVF4LUd1OWNQXzJpZFpr?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMingFBVV95cUxNamhBSWgtcmZwTVRVOXlnbGZMN2R1bDFlMWEtV21wUXFmUGVoWW5vQWNVbU55OEE0T0lWMUFlMXFZVGdvNmN0TElFUGNkQUlwQ01hU09aUEZIZlBjd0lMbGJMOVJHbmhOSTNRaHU0cXBnNmRVQ2lTb21odDUzOGlRQ1phSTRDUDVucThHQjNncjI1Q1pMOVV0WlotdDVpUdIBowFBVV95cUxNQW5ST21vbGJyUWYzcHVFZFJOZUgzTEJ3TWFkS3Y4Nm9fQ2w3c3puMnJqaFBpbl9CVG5Gd1RSZUVGQmJqLVZaN0dBZ0dOWEZNb3IxMDBtaGhWNGllb29aZERqeGxibHhnakZJRDgxeF9oa1NDSGV2YzYwa3plQ0dhZU43aHJNb1MyUlZRRm1hb1BZRVpZRVF4LUd1OWNQXzJpZFpr?oc=5</a></span>
-      <div class="kw"><span>Amodei</span><span>Huang</span><span>Dreamforce</span><span>AI safety</span><span>antitrust</span><span>regulation</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">02</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOako0N2w1bExjVVA0azZSLUI0QXdveUdDUWFnM0RKeVJVTEN4TlFlX0t5UHR6Z1FROWp2LVJUSjY4anRUakt0OTBUWkdFdjNKLTFDNmhPZ0RVY3BZSEZzLVFFUjZVdmtLSHk1bVZQRm1ObVJ6SGVSWGpJbXBBdS1EQ3lSMk4xNzNfVTJQT2NYaW1aUkV5c1plNDJNRXk2S3ZPMzA5Yw?oc=5" target="_blank" rel="noopener">Claude for financial advisors: Schwab opens Claude to 16,000 RIAs, BlackRock Aladdin integration, read-only by design</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Anthropic launched a Claude offering for wealth management (Reuters, Barron&#x27;s, 14 Sep). Charles Schwab will make Claude available to more than 16,000 independent registered investment advisors on its platform, and Claude connects into BlackRock&#x27;s Aladdin. Citywire reports the Schwab deal restricts Claude to read-only account access, so it drafts, researches and summarises but does not execute trades or move money.</p>
-    <ul class="points">
-      <li>First vertical Claude product aimed squarely at regulated advisory workflows</li>
-      <li>Read-only access is the compliance trade-off that got Schwab over the line</li>
-      <li>Same day: Forbes says Anthropic is pushing Claude to small businesses after 900k installs</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOako0N2w1bExjVVA0azZSLUI0QXdveUdDUWFnM0RKeVJVTEN4TlFlX0t5UHR6Z1FROWp2LVJUSjY4anRUakt0OTBUWkdFdjNKLTFDNmhPZ0RVY3BZSEZzLVFFUjZVdmtLSHk1bVZQRm1ObVJ6SGVSWGpJbXBBdS1EQ3lSMk4xNzNfVTJQT2NYaW1aUkV5c1plNDJNRXk2S3ZPMzA5Yw?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMipAFBVV95cUxOako0N2w1bExjVVA0azZSLUI0QXdveUdDUWFnM0RKeVJVTEN4TlFlX0t5UHR6Z1FROWp2LVJUSjY4anRUakt0OTBUWkdFdjNKLTFDNmhPZ0RVY3BZSEZzLVFFUjZVdmtLSHk1bVZQRm1ObVJ6SGVSWGpJbXBBdS1EQ3lSMk4xNzNfVTJQT2NYaW1aUkV5c1plNDJNRXk2S3ZPMzA5Yw?oc=5</a></span>
-      <div class="kw"><span>Claude</span><span>Schwab</span><span>BlackRock</span><span>wealth management</span><span>financial services</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">03</span>
-      <h2><a href="https://news.google.com/rss/search?q=Anthropic+S-1+IPO+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">Anthropic S-1 &#x27;imminent&#x27; per Axios; Bloomberg says the $2T IPO is still on despite slowdown rhetoric</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Axios reports Anthropic&#x27;s S-1 filing is imminent while its sustainability disclosures remain nascent. Bloomberg argues the IPO at a roughly $2 trillion valuation proceeds regardless of Amodei&#x27;s pacing proposal, and CNBC asks what a slowdown would mean for the listing. Yahoo Finance notes Wall Street is pushing back on the warning as AI spending is expected to continue.</p>
-    <ul class="points">
-      <li>S-1 timing now days, not months, per Axios</li>
-      <li>Investors read the safety essay as positioning, not a growth cap</li>
-      <li>Follows OpenAI&#x27;s decision to skip a 2026 IPO</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/search?q=Anthropic+S-1+IPO+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">news.google.com/rss/search?q=Anthropic+S-1+IPO+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en</a></span>
-      <div class="kw"><span>Anthropic</span><span>IPO</span><span>S-1</span><span>valuation</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">04</span>
-      <h2><a href="https://news.google.com/rss/search?q=Anthropic+researcher+resign+disagreements+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">Ex-Anthropic researcher details disagreements with leadership; Gizmodo mocks Anthropic&#x27;s &#x27;end of humanity&#x27; hire</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Business Insider ran the resigned Anthropic researcher&#x27;s account of where he split with leadership after his extinction-risk warning went viral, and Chosun reports he alleges Anthropic is accelerating the self-improvement race. Gizmodo highlighted a new Anthropic job listing to help set terms for a post-AGI transition. CalPERS leaders cited the resignation while airing their own AI fears.</p>
-    <ul class="points">
-      <li>Departure narrative now shaping pension-fund and policymaker talking points</li>
-      <li>Whistleblower Network News: warnings cover OpenAI and Anthropic alike</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/search?q=Anthropic+researcher+resign+disagreements+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">news.google.com/rss/search?q=Anthropic+researcher+resign+disagreements+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en</a></span>
-      <div class="kw"><span>Anthropic</span><span>resignation</span><span>x-risk</span><span>alignment</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">05</span>
-      <h2><a href="https://www.anthropic.com/news/threat-intelligence-report-september-2026" target="_blank" rel="noopener">Claude misuse fallout: Russian team trained drone targeting on Ukrainian footage; weapons/surveillance use confirmed</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Follow-on coverage of Anthropic&#x27;s September threat-intelligence report. The Conversation details a Russian team that misused Claude to train a strike drone on scraped Ukrainian war footage, and The Defense Post frames the report as Anthropic confirming Claude was used in weapons and surveillance efforts before being cut off. BleepingComputer earlier covered the 1.8M Android app secret-extraction campaign from the same report.</p>
-    <ul class="points">
-      <li>Case studies now getting standalone press beyond the original 10 Sep report</li>
-      <li>Reinforces the &#x27;AI democratises sophistication&#x27; thesis in the report</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://www.anthropic.com/news/threat-intelligence-report-september-2026" target="_blank" rel="noopener">www.anthropic.com/news/threat-intelligence-report-september-2026</a></span>
-      <div class="kw"><span>Claude</span><span>misuse</span><span>threat intelligence</span><span>drones</span><span>security</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">06</span>
-      <h2><a href="https://news.google.com/rss/search?q=%22Claude+Code%22+without+Anthropic+models+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">The Information: developers route Claude Code to non-Anthropic models</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">The Information reports developers are finding ways to run Claude Code against other vendors&#x27; models, using gateway and proxy tricks. Notable because Claude Code&#x27;s newest release adds LLM-gateway request headers, which make such routing easier to observe and meter.</p>
-    <ul class="points">
-      <li>Harness is becoming vendor-portable whether Anthropic likes it or not</li>
-      <li>Pairs with Salesforce building its own model three weeks after its Claude deal (Techzine)</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/search?q=%22Claude+Code%22+without+Anthropic+models+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">news.google.com/rss/search?q=%22Claude+Code%22+without+Anthropic+models+when:2d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en</a></span>
-      <div class="kw"><span>Claude Code</span><span>gateway</span><span>model routing</span><span>The Information</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">07</span>
-      <h2><a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">Claude API: on-demand conversation compaction beta (compact-2026-09-04)</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Platform release notes (14 Sep) add on-demand compaction to the Messages API behind the compact-2026-09-04 beta header. A compaction parameter returns a signed summary block that replaces older turns in later requests while recent turns stay verbatim and prompt-cache and thinking-block validity are preserved.</p>
-    <ul class="points">
-      <li>Server-side compaction, no client-side summarisation prompt needed</li>
-      <li>Signed blocks stop tampering with the summary</li>
-      <li>Complements 10 Sep Managed Agents auto permission mode + ant beta:sessions connect</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">platform.claude.com/docs/en/release-notes/overview</a></span>
-      <div class="kw"><span>Claude API</span><span>compaction</span><span>context management</span><span>beta</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">08</span>
-      <h2><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Claude Code v2.1.273: LLM-gateway request headers, MCP disconnect notices, stricter Bash permission checks</a></h2>
-      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
-    </div>
-    <p class="summary">Latest Claude Code release adds x-claude-code-request-class and x-claude-code-agent-type headers for gateway monitoring, notifies the user when an MCP server disconnects and reconnection fails, and hardens the Bash permission checker for subshells and chained cd+git operations.</p>
-    <ul class="points">
-      <li>Gateway headers let enterprises meter agent vs interactive traffic</li>
-      <li>Permission checker closes subshell bypass patterns</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" target="_blank" rel="noopener">github.com/anthropics/claude-code/blob/main/CHANGELOG.md</a></span>
-      <div class="kw"><span>Claude Code</span><span>release</span><span>MCP</span><span>permissions</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">09</span>
-      <h2><a href="https://status.claude.com/" target="_blank" rel="noopener">Status: Fable 5.1 / Mythos 5.1 error spikes (15 Sep) and Cowork on Windows degraded (14 Sep), both resolved</a></h2>
-      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
-    </div>
-    <p class="summary">status.claude.com logged intermittent error spikes on Claude Mythos 5.1 and Fable 5.1 on 15 Sep, resolved same day, and degraded functionality for Claude Cowork on Windows on 14 Sep, also resolved. No open incidents as of 16 Sep.</p>
-    <ul class="points">
-      <li>Two same-day incidents, no multi-hour outage</li>
-      <li>OpenAI status clean over the same window</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://status.claude.com/" target="_blank" rel="noopener">status.claude.com</a></span>
-      <div class="kw"><span>status</span><span>incident</span><span>Fable 5.1</span><span>Cowork</span></div>
-    </div>
-  </article>
-  <div class="cat-head">OpenAI / ChatGPT</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">10</span>
-      <h2><a href="https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/" target="_blank" rel="noopener">OpenAI confirms weeks of safety talks with Anthropic and Google DeepMind; standards body on the table</a></h2>
-      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
-    </div>
-    <p class="summary">OpenAI policy chief Chris Lehane confirmed (TechCrunch, Bloomberg, Reuters, 15 Sep) that OpenAI, Anthropic and Google DeepMind have been discussing joint safety measures for weeks, including an industry standards body to monitor advanced models and coordinate any slowdown, and embedded third-party evaluators. Lehane said the firms do not need an antitrust waiver, contradicting Amodei&#x27;s ask, though some participants acknowledged antitrust exposure. Altman, Hassabis and Musk publicly backed the effort; Trump dismissed the concerns as a &#x27;hoax&#x27;.</p>
-    <ul class="points">
-      <li>Standards body powers and enforcement still undecided</li>
-      <li>OpenAI backs the FRONTIER Act clause for independent safety verification at top labs</li>
-      <li>Musk urges US labs and Chinese companies to test each other&#x27;s models</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/" target="_blank" rel="noopener">techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks</a></span>
-      <div class="kw"><span>OpenAI</span><span>Anthropic</span><span>Google DeepMind</span><span>safety standards</span><span>Lehane</span><span>antitrust</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">11</span>
-      <h2><a href="https://news.google.com/rss/search?q=OpenAI+%221.2+trillion%22+funding+when:1d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">OpenAI weighs pre-IPO round at $1.2T+ valuation (FT, WSJ); NYT hears $1.5T</a></h2>
-      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
-    </div>
-    <p class="summary">The Financial Times, WSJ and Reuters report OpenAI is discussing a new private funding round valuing the company above $1.2 trillion ahead of any IPO; the New York Times puts the figure under consideration at $1.5 trillion. Fortune reads it as confirmation the 2026 IPO is off, consistent with Altman&#x27;s &#x27;ill-advised&#x27; comment last week.</p>
-    <ul class="points">
-      <li>Would roughly double the last reported valuation</li>
-      <li>Private capital substitutes for the delayed listing</li>
-      <li>SoftBank&#x27;s $11.9B loan already earmarked for OpenAI</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/search?q=OpenAI+%221.2+trillion%22+funding+when:1d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">news.google.com/rss/search?q=OpenAI+%221.2+trillion%22+funding+when:1d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en</a></span>
-      <div class="kw"><span>OpenAI</span><span>funding</span><span>valuation</span><span>IPO</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">12</span>
-      <h2><a href="https://news.google.com/rss/search?q=OpenAI+Glass+Imaging+acquisition&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">OpenAI buys smartphone camera startup Glass Imaging for ~$300M</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">TechCrunch and others report OpenAI acquired Glass Imaging, a computational-photography and camera-optics startup, for about $300 million (14 Sep). The deal feeds OpenAI&#x27;s consumer hardware program with in-house imaging expertise for a camera-equipped device.</p>
-    <ul class="points">
-      <li>Third hardware-adjacent acquisition after io and earlier talent deals</li>
-      <li>Vision input is a core requirement for an always-on assistant device</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/search?q=OpenAI+Glass+Imaging+acquisition&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">news.google.com/rss/search?q=OpenAI+Glass+Imaging+acquisition&amp;hl=en-US&amp;gl=US&amp;ceid=US:en</a></span>
-      <div class="kw"><span>OpenAI</span><span>acquisition</span><span>Glass Imaging</span><span>hardware</span><span>camera</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">13</span>
-      <h2><a href="https://news.google.com/rss/search?q=OpenAI+bipartisan+AI+biothreats+Politico&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">OpenAI backs bipartisan bill on AI biothreats</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Politico reports OpenAI endorsed a bipartisan congressional push to address AI-enabled biological threats, including screening and evaluation requirements. Lands as OpenAI faces a congressional probe over the RubyGems agent incident and positions the company as pro-regulation on narrow catastrophic risks.</p>
-    <ul class="points">
-      <li>Narrow bio-risk regulation is the one area all frontier labs accept</li>
-      <li>Politically useful counterweight to the agent-security probe</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/search?q=OpenAI+bipartisan+AI+biothreats+Politico&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">news.google.com/rss/search?q=OpenAI+bipartisan+AI+biothreats+Politico&amp;hl=en-US&amp;gl=US&amp;ceid=US:en</a></span>
-      <div class="kw"><span>OpenAI</span><span>biosecurity</span><span>Congress</span><span>policy</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">14</span>
-      <h2><a href="https://openai.com/index/fyxer" target="_blank" rel="noopener">OpenAI customer stories: Fyxer&#x27;s AI executive assistant; Devin self-tests with GPT-6 Astra</a></h2>
-      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
-    </div>
-    <p class="summary">openai.com published case studies on Fyxer building a trusted AI executive assistant on OpenAI models (14 Sep) and Cognition using GPT-6 Astra so Devin tests its own work (11 Sep). Also a storage-engineering post on scaling to over 1 billion ChatGPT users.</p>
-    <ul class="points">
-      <li>Astra positioned for verification loops, not just generation</li>
-      <li>1B+ ChatGPT users stated as the scaling baseline</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://openai.com/index/fyxer" target="_blank" rel="noopener">openai.com/index/fyxer</a></span>
-      <div class="kw"><span>GPT-6 Astra</span><span>case study</span><span>Devin</span><span>ChatGPT scale</span></div>
-    </div>
-  </article>
-  <div class="cat-head">Google Gemini / DeepMind</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">15</span>
-      <h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/" target="_blank" rel="noopener">Gemini 3.8 Live and 3.8 Live Extended Thinking: top of speech-to-speech benchmarks, 97 languages, powering Search Live</a></h2>
-      <span class="score"><span class="dot">●●●●●</span> <span>5/5</span></span>
-    </div>
-    <p class="summary">Google launched two audio-to-audio models on 15 Sep across the Gemini API, AI Studio, Vertex AI and Search Live. Gemini 3.8 Live is the cost-efficient default for voice agents; Extended Thinking reasons mid-conversation with live progress narration and ranks #1 on Artificial Analysis&#x27; Speech-to-Speech Quality Index (82.6), scores 68.6% on τ-Voice and 97.7% on Big Bench Audio. Both handle 97 languages with mid-call switching, near-real-time visual input and background task execution; Extended Thinking also lands in Workspace for Pro/Ultra. All audio is SynthID-watermarked. The Decoder frames it as undercutting OpenAI&#x27;s GPT-Live-1 on price.</p>
-    <ul class="points">
-      <li>Developer post pairs it with Gemini 3.5 Transcribe for real-time voice apps</li>
-      <li>Simon Willison already shipped a WebSocket browser UI with barge-in</li>
-      <li>HN: 329 points, 203 comments</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/" target="_blank" rel="noopener">blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking</a></span>
-      <div class="kw"><span>Gemini 3.8 Live</span><span>voice</span><span>speech-to-speech</span><span>Live API</span><span>Search Live</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">16</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQeVdIUmJiNllaNlRYVWdqSUxuNEVZOGEwM3pEejBCcUthZ0xwYTVNY1l5TXNINnF5MEU4VmUydmNab1k0SDIxU0tFLWZWMWpGa29yRkpka1VOUEljMGpadUNaQzBsQ1pMc3Iza3c0WG0yY0dUWHRweTlhTVZRU21EdDEweXhCSHJWc0lNb3M5cFpURlE?oc=5" target="_blank" rel="noopener">Two Google DeepMind researchers resign over safety; one says AI &#x27;has the potential to kill us all&#x27;</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">The Information reports two DeepMind AI researchers resigned citing safety concerns. Business Insider, Reuters and the NY Post carried one former researcher&#x27;s statement that he left because he earnestly believes AI could kill everyone, echoing last week&#x27;s Anthropic departure. A separate Guardian op-ed by an ex-DeepMind staffer urges readers to take the warnings seriously.</p>
-    <ul class="points">
-      <li>Second frontier lab in a week with public safety resignations</li>
-      <li>Adds pressure on Hassabis, who backed the joint safety talks</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQeVdIUmJiNllaNlRYVWdqSUxuNEVZOGEwM3pEejBCcUthZ0xwYTVNY1l5TXNINnF5MEU4VmUydmNab1k0SDIxU0tFLWZWMWpGa29yRkpka1VOUEljMGpadUNaQzBsQ1pMc3Iza3c0WG0yY0dUWHRweTlhTVZRU21EdDEweXhCSHJWc0lNb3M5cFpURlE?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMikwFBVV95cUxQeVdIUmJiNllaNlRYVWdqSUxuNEVZOGEwM3pEejBCcUthZ0xwYTVNY1l5TXNINnF5MEU4VmUydmNab1k0SDIxU0tFLWZWMWpGa29yRkpka1VOUEljMGpadUNaQzBsQ1pMc3Iza3c0WG0yY0dUWHRweTlhTVZRU21EdDEweXhCSHJWc0lNb3M5cFpURlE?oc=5</a></span>
-      <div class="kw"><span>DeepMind</span><span>resignation</span><span>AI safety</span><span>x-risk</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">17</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDhCbkh6TDZmcjBuZldOZXdJdGFWZW1JeVcxMGd6ZVZEc2lra0ZDNlJIVHBKUExBc0p2NF9FNGxYR1hZNmJwRW5yVmpkZDZTTC1GdXRKdHN5ZEJsd2RiNTlKQS11YjkySzd3T3hHVWc4M0hRRXhvdlBWUU1SOW9DNzI0OWFXdUt2eGRKTjdzSG8xTDNQN0VWUF90UDhNVlBHWEVn?oc=5" target="_blank" rel="noopener">iOS 27 ships with Gemini-powered Siri; EU excluded at launch</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">The Decoder confirms Apple&#x27;s revamped Siri built on Google&#x27;s Gemini rolled out with iOS 27 on 15 Sep, but the Gemini-backed features are withheld in the EU. Confirms last week&#x27;s pre-release report.</p>
-    <ul class="points">
-      <li>Largest consumer distribution of Gemini to date</li>
-      <li>EU gap likely tied to DMA/AI Act compliance</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDhCbkh6TDZmcjBuZldOZXdJdGFWZW1JeVcxMGd6ZVZEc2lra0ZDNlJIVHBKUExBc0p2NF9FNGxYR1hZNmJwRW5yVmpkZDZTTC1GdXRKdHN5ZEJsd2RiNTlKQS11YjkySzd3T3hHVWc4M0hRRXhvdlBWUU1SOW9DNzI0OWFXdUt2eGRKTjdzSG8xTDNQN0VWUF90UDhNVlBHWEVn?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMiowFBVV95cUxOVDhCbkh6TDZmcjBuZldOZXdJdGFWZW1JeVcxMGd6ZVZEc2lra0ZDNlJIVHBKUExBc0p2NF9FNGxYR1hZNmJwRW5yVmpkZDZTTC1GdXRKdHN5ZEJsd2RiNTlKQS11YjkySzd3T3hHVWc4M0hRRXhvdlBWUU1SOW9DNzI0OWFXdUt2eGRKTjdzSG8xTDNQN0VWUF90UDhNVlBHWEVn?oc=5</a></span>
-      <div class="kw"><span>Gemini</span><span>Siri</span><span>iOS 27</span><span>Apple</span><span>EU</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">18</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxORjAwSS02c1U3SW83QTFqSm1LZGFiQjhXOEZfR0gyYzBySnVTcDhzYV9EcGlIWjZTdXRBNGIyMHV3WGlEMzBsd0l4cDhqdGh0YTF0QkZRZ3dfSlI5dm8xSHBJY2swdEZ0bzFMcHVpMUFmWi1zRVZNMTRKeDhMQ01Ic0JkOU5zampMY3N4LWMtdDhXd1ltVmNyV3IzYkJZbVAtaVgyQWln?oc=5" target="_blank" rel="noopener">DeepMind wants a robot &#x27;brain&#x27; that transfers across bodies</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Scientific American profiles DeepMind&#x27;s push for an embodied foundation model that can jump between different robot morphologies, learning skills once and re-targeting them to new hardware.</p>
-    <ul class="points">
-      <li>Cross-embodiment transfer is the open problem for general-purpose robotics</li>
-      <li>Builds on the Gemini Robotics line</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxORjAwSS02c1U3SW83QTFqSm1LZGFiQjhXOEZfR0gyYzBySnVTcDhzYV9EcGlIWjZTdXRBNGIyMHV3WGlEMzBsd0l4cDhqdGh0YTF0QkZRZ3dfSlI5dm8xSHBJY2swdEZ0bzFMcHVpMUFmWi1zRVZNMTRKeDhMQ01Ic0JkOU5zampMY3N4LWMtdDhXd1ltVmNyV3IzYkJZbVAtaVgyQWln?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMipgFBVV95cUxORjAwSS02c1U3SW83QTFqSm1LZGFiQjhXOEZfR0gyYzBySnVTcDhzYV9EcGlIWjZTdXRBNGIyMHV3WGlEMzBsd0l4cDhqdGh0YTF0QkZRZ3dfSlI5dm8xSHBJY2swdEZ0bzFMcHVpMUFmWi1zRVZNMTRKeDhMQ01Ic0JkOU5zampMY3N4LWMtdDhXd1ltVmNyV3IzYkJZbVAtaVgyQWln?oc=5</a></span>
-      <div class="kw"><span>DeepMind</span><span>robotics</span><span>embodied AI</span><span>cross-embodiment</span></div>
-    </div>
-  </article>
-  <div class="cat-head">xAI / Grok</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">19</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOcWF5U0kyeW5XTXM3VlNDaG44ZW5EbVo3TGIwVXVLLUNYOUpReGduUEttWXprcGUwTV9DYVNrOGY2QmlTcHpBSnpCbTNmNHlzLVVwMWwtTEtPRF9WeEM4cXpGM2dlOWV1bFZfNjkwak16cWtnQkFGcFpJR1AwSkx6YmUyM0NkNTQ4RGZuNXJrY0U2dHBnc19MMzM2bnpPZklr0gGmAUFVX3lxTFAzVU5ORzBlVGxKM2JhUVVtT0tUbVBTSnNaZ010b2hkUFhVRXNYZklDeGdFYy1NNjRhQmdQRGxPVlZ0dDdiVEV3aFJvbGcxUWxnRGVFNElVai1feXFQUFVqZnItZFVtYXJ6bDNyci1EM3ZjRWJiUEFNX1Yzb3h4U1R6Xy13WDVtXzhEWklBU0xGclp6QWF6SFkxZk54T1NkY2FoY2xRVVE?oc=5" target="_blank" rel="noopener">xAI settles antitrust claims against Apple over AI competition</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Bloomberg, Reuters and the Mercury News report xAI resolved its claims against Apple alleging the OpenAI-Apple partnership unfairly disadvantaged Grok in the App Store and on iOS. Terms were not disclosed. Ends one of the two Musk-vs-Apple/OpenAI legal fronts.</p>
-    <ul class="points">
-      <li>Settlement terms undisclosed</li>
-      <li>xAI&#x27;s separate suit against OpenAI not covered by this resolution</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOcWF5U0kyeW5XTXM3VlNDaG44ZW5EbVo3TGIwVXVLLUNYOUpReGduUEttWXprcGUwTV9DYVNrOGY2QmlTcHpBSnpCbTNmNHlzLVVwMWwtTEtPRF9WeEM4cXpGM2dlOWV1bFZfNjkwak16cWtnQkFGcFpJR1AwSkx6YmUyM0NkNTQ4RGZuNXJrY0U2dHBnc19MMzM2bnpPZklr0gGmAUFVX3lxTFAzVU5ORzBlVGxKM2JhUVVtT0tUbVBTSnNaZ010b2hkUFhVRXNYZklDeGdFYy1NNjRhQmdQRGxPVlZ0dDdiVEV3aFJvbGcxUWxnRGVFNElVai1feXFQUFVqZnItZFVtYXJ6bDNyci1EM3ZjRWJiUEFNX1Yzb3h4U1R6Xy13WDVtXzhEWklBU0xGclp6QWF6SFkxZk54T1NkY2FoY2xRVVE?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMioAFBVV95cUxOcWF5U0kyeW5XTXM3VlNDaG44ZW5EbVo3TGIwVXVLLUNYOUpReGduUEttWXprcGUwTV9DYVNrOGY2QmlTcHpBSnpCbTNmNHlzLVVwMWwtTEtPRF9WeEM4cXpGM2dlOWV1bFZfNjkwak16cWtnQkFGcFpJR1AwSkx6YmUyM0NkNTQ4RGZuNXJrY0U2dHBnc19MMzM2bnpPZklr0gGmAUFVX3lxTFAzVU5ORzBlVGxKM2JhUVVtT0tUbVBTSnNaZ010b2hkUFhVRXNYZklDeGdFYy1NNjRhQmdQRGxPVlZ0dDdiVEV3aFJvbGcxUWxnRGVFNElVai1feXFQUFVqZnItZFVtYXJ6bDNyci1EM3ZjRWJiUEFNX1Yzb3h4U1R6Xy13WDVtXzhEWklBU0xGclp6QWF6SFkxZk54T1NkY2FoY2xRVVE?oc=5</a></span>
-      <div class="kw"><span>xAI</span><span>Apple</span><span>antitrust</span><span>settlement</span><span>Grok</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">20</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcVlwS2VTZmpJS0VRQmdPOUZtemQycnNlLUtTcHR5dDZuZkwyY2JVRHdmUDMyWVU4N2VHaVdLeXZQMFNocGFFVnhsdjF2bDRHMTc1T3JRYzlTRFkyb3A4N3pnSmpfbUNNRVd6OUZhMWNaU2ZFajA3a3VyTkNuMkVvVWxGaWNHOGlVc2ItWHc4N19menN6dzA5NnBNWDhFS01CMUNvUS04NkZYMGNoaVhhaG0xNXlZTlpVX0ZlTEFZd2FBUHVLb2ZNbWR3TGhMSXpJOFNRVTNsZHF4Y2h10gHiAUFVX3lxTE1QZzJzM2FhcnBsWmpXcmQxdkxvTzlTem5vS2NsMmhOYzB1aURlZVRocWtSTXVKRllMS1VVb19GM2Nqdlo2UjNvZkk4S3hNVnU3NFJIUjd1bzhoNm11T3lJOEh5Yk40c0pjWDBwNDdJTHloekNmSjgyaFNtWTRUWXNZSEM3S1JuUmFwZFVLYlN3NFBtYlFMMG4tUHpNSmVYb0xEVWdzeGlPbUVMTk95azFuNXZrOHNCeENfVWxvNUNWelpEc1ZDNmFPVXgxVVY2NTdoZW9WT2d3MERXMVdTMmdpeVE?oc=5" target="_blank" rel="noopener">Musk: AI &#x27;not good enough&#x27; for high-performance software yet; Grok 4.9 targeted at Fable-class, Grok 4.8 pretraining stack hand-written C++</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Wccftech and Analytics India Magazine relay Musk posts saying current AI cannot write extremely high-performance software, that Grok 4.9 should match Fable-class models, and that Grok 4.8&#x27;s pretraining stack is C++ written by humans, not AI. Grok 4.7 remains delayed with no date; Grok 5 is being pitched as the AGI attempt.</p>
-    <ul class="points">
-      <li>Roadmap now 4.7 (delayed) → 4.8 → 4.9 (Fable parity claim) → 5</li>
-      <li>Musk living in an Airstream at the Memphis site to oversee expansion (Fortune)</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcVlwS2VTZmpJS0VRQmdPOUZtemQycnNlLUtTcHR5dDZuZkwyY2JVRHdmUDMyWVU4N2VHaVdLeXZQMFNocGFFVnhsdjF2bDRHMTc1T3JRYzlTRFkyb3A4N3pnSmpfbUNNRVd6OUZhMWNaU2ZFajA3a3VyTkNuMkVvVWxGaWNHOGlVc2ItWHc4N19menN6dzA5NnBNWDhFS01CMUNvUS04NkZYMGNoaVhhaG0xNXlZTlpVX0ZlTEFZd2FBUHVLb2ZNbWR3TGhMSXpJOFNRVTNsZHF4Y2h10gHiAUFVX3lxTE1QZzJzM2FhcnBsWmpXcmQxdkxvTzlTem5vS2NsMmhOYzB1aURlZVRocWtSTXVKRllMS1VVb19GM2Nqdlo2UjNvZkk4S3hNVnU3NFJIUjd1bzhoNm11T3lJOEh5Yk40c0pjWDBwNDdJTHloekNmSjgyaFNtWTRUWXNZSEM3S1JuUmFwZFVLYlN3NFBtYlFMMG4tUHpNSmVYb0xEVWdzeGlPbUVMTk95azFuNXZrOHNCeENfVWxvNUNWelpEc1ZDNmFPVXgxVVY2NTdoZW9WT2d3MERXMVdTMmdpeVE?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMi3AFBVV95cUxPcVlwS2VTZmpJS0VRQmdPOUZtemQycnNlLUtTcHR5dDZuZkwyY2JVRHdmUDMyWVU4N2VHaVdLeXZQMFNocGFFVnhsdjF2bDRHMTc1T3JRYzlTRFkyb3A4N3pnSmpfbUNNRVd6OUZhMWNaU2ZFajA3a3VyTkNuMkVvVWxGaWNHOGlVc2ItWHc4N19menN6dzA5NnBNWDhFS01CMUNvUS04NkZYMGNoaVhhaG0xNXlZTlpVX0ZlTEFZd2FBUHVLb2ZNbWR3TGhMSXpJOFNRVTNsZHF4Y2h10gHiAUFVX3lxTE1QZzJzM2FhcnBsWmpXcmQxdkxvTzlTem5vS2NsMmhOYzB1aURlZVRocWtSTXVKRllMS1VVb19GM2Nqdlo2UjNvZkk4S3hNVnU3NFJIUjd1bzhoNm11T3lJOEh5Yk40c0pjWDBwNDdJTHloekNmSjgyaFNtWTRUWXNZSEM3S1JuUmFwZFVLYlN3NFBtYlFMMG4tUHpNSmVYb0xEVWdzeGlPbUVMTk95azFuNXZrOHNCeENfVWxvNUNWelpEc1ZDNmFPVXgxVVY2NTdoZW9WT2d3MERXMVdTMmdpeVE?oc=5</a></span>
-      <div class="kw"><span>Grok 4.9</span><span>Grok 4.8</span><span>Musk</span><span>roadmap</span><span>xAI</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">21</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdk1uLXZfMHNrZlF6UmxRN2ZzUndiMkc3MnNlYlZrcFMxdktNTTVZeHdzb2tMc0E2YVo3UzFTd2VTTXFNWDdYcEFzeHVQdUx6cUtrdGVHSTVIbmNyVW43Wm0zcDYzUWxZajZzdThBdDYwVklPMjZaRHdKZkdZX1JnbGVjcGctRGxnZC1Pcnp1c1FqVVI2U2paUUJCb3dkTkJScFI0RVRSekJlYkJjOVhJclV5T1E5UXg0UEpVV2R0LVE?oc=5" target="_blank" rel="noopener">xAI asks court to block Minnesota AI &#x27;nudification&#x27; law during appeal</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Reuters: xAI filed to enjoin Minnesota&#x27;s law targeting AI-generated sexual deepfakes while its appeal proceeds, arguing First Amendment and Section 230 grounds after Grok&#x27;s image tools drew scrutiny.</p>
-    <ul class="points">
-      <li>Test case for state-level generative-image liability</li>
-      <li>Outcome affects every image model vendor operating in MN</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdk1uLXZfMHNrZlF6UmxRN2ZzUndiMkc3MnNlYlZrcFMxdktNTTVZeHdzb2tMc0E2YVo3UzFTd2VTTXFNWDdYcEFzeHVQdUx6cUtrdGVHSTVIbmNyVW43Wm0zcDYzUWxZajZzdThBdDYwVklPMjZaRHdKZkdZX1JnbGVjcGctRGxnZC1Pcnp1c1FqVVI2U2paUUJCb3dkTkJScFI0RVRSekJlYkJjOVhJclV5T1E5UXg0UEpVV2R0LVE?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMiwAFBVV95cUxNdk1uLXZfMHNrZlF6UmxRN2ZzUndiMkc3MnNlYlZrcFMxdktNTTVZeHdzb2tMc0E2YVo3UzFTd2VTTXFNWDdYcEFzeHVQdUx6cUtrdGVHSTVIbmNyVW43Wm0zcDYzUWxZajZzdThBdDYwVklPMjZaRHdKZkdZX1JnbGVjcGctRGxnZC1Pcnp1c1FqVVI2U2paUUJCb3dkTkJScFI0RVRSekJlYkJjOVhJclV5T1E5UXg0UEpVV2R0LVE?oc=5</a></span>
-      <div class="kw"><span>xAI</span><span>Minnesota</span><span>deepfakes</span><span>litigation</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">22</span>
-      <h2><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTDhfREE4UHFhTEhPUS1uX2RBRzJDb2tLcWpIN05jdlhhbk11eXBOUVRTV3E1bVpkem15ZE5FMElvWHVndmtyOWw1Uy1mbmRMQ3JpcFVkdVR5MzlnRmFqUDBkTkg0RXRJeFdiemVERU5OeGZuNXl5T0czd043c1dURFFVQXl2SVVXM25tT3E2cElMX1FNSWhYY3NSN0xienpVLXhsQjhCUm8tejh5dUd3TFlBUzlWeVVodzVLcmlnWUhsemlVNHE5VUh1X2lyVGtJSi0taGxQRjY3YjJrNWNmMmhR?oc=5" target="_blank" rel="noopener">Grok live in Word, Excel, PowerPoint as a Microsoft subprocessor; system prompts keep it &#x27;strictly professional&#x27;</a></h2>
-      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
-    </div>
-    <p class="summary">Forbes and Windows Central add detail to last week&#x27;s Copilot announcement: Grok runs as a Microsoft subprocessor under Microsoft&#x27;s data terms, and Microsoft-controlled system prompts constrain tone and topics inside Office apps.</p>
-    <ul class="points">
-      <li>Enterprise data handling governed by Microsoft, not xAI</li>
-      <li>Tesla vehicles also gaining Grok texting and navigation functions</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTDhfREE4UHFhTEhPUS1uX2RBRzJDb2tLcWpIN05jdlhhbk11eXBOUVRTV3E1bVpkem15ZE5FMElvWHVndmtyOWw1Uy1mbmRMQ3JpcFVkdVR5MzlnRmFqUDBkTkg0RXRJeFdiemVERU5OeGZuNXl5T0czd043c1dURFFVQXl2SVVXM25tT3E2cElMX1FNSWhYY3NSN0xienpVLXhsQjhCUm8tejh5dUd3TFlBUzlWeVVodzVLcmlnWUhsemlVNHE5VUh1X2lyVGtJSi0taGxQRjY3YjJrNWNmMmhR?oc=5" target="_blank" rel="noopener">news.google.com/rss/articles/CBMi4gFBVV95cUxPTDhfREE4UHFhTEhPUS1uX2RBRzJDb2tLcWpIN05jdlhhbk11eXBOUVRTV3E1bVpkem15ZE5FMElvWHVndmtyOWw1Uy1mbmRMQ3JpcFVkdVR5MzlnRmFqUDBkTkg0RXRJeFdiemVERU5OeGZuNXl5T0czd043c1dURFFVQXl2SVVXM25tT3E2cElMX1FNSWhYY3NSN0xienpVLXhsQjhCUm8tejh5dUd3TFlBUzlWeVVodzVLcmlnWUhsemlVNHE5VUh1X2lyVGtJSi0taGxQRjY3YjJrNWNmMmhR?oc=5</a></span>
-      <div class="kw"><span>Grok</span><span>Microsoft 365</span><span>Copilot</span><span>subprocessor</span></div>
-    </div>
-  </article>
-  <div class="cat-head">Other AI industry</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">23</span>
-      <h2><a href="https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/" target="_blank" rel="noopener">Meta expands AI subscription tiers and lets agents set up WhatsApp Business</a></h2>
-      <span class="score"><span class="dot">●●</span><span class="off">○○○</span> <span>2/5</span></span>
-    </div>
-    <p class="summary">TechCrunch: Meta rolled out new AI-focused paid plans across its apps and shipped AI agents that automate the tedious parts of WhatsApp Business onboarding. Incremental monetisation moves as Zuckerberg publicly opposes the Anthropic-led slowdown.</p>
-    <ul class="points">
-      <li>Consumer AI monetisation via subscriptions, not just ads</li>
-      <li>Agents handle catalog, profile and setup steps</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/" target="_blank" rel="noopener">techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans</a></span>
-      <div class="kw"><span>Meta</span><span>subscription</span><span>WhatsApp</span><span>agents</span></div>
-    </div>
-  </article>
-  <div class="sec-head">General tech</div>
-  <div class="cat-head">AI / ML</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">24</span>
-      <h2><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">TypeSafe AI&#x27;s &#x27;System One&#x27; model Jev: type-safe structured decisions in 70–500ms, $0.042/M input, free output</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Ex-OpenAI researcher Diogo Almeida&#x27;s TypeSafe AI introduced System One models, built for fast structured decisions software consumes directly rather than chat. First model Jev returns schema-constrained outputs with calibrated confidence via parallel sampling instead of sequential decoding, claiming 40–200x lower latency than LLMs on equivalent structured tasks and no type errors by construction. Early access via waitlist; pricing $0.042 per million input tokens, output free.</p>
-    <ul class="points">
-      <li>Hallucination claim holds only for type errors, not semantic correctness</li>
-      <li>Free output pricing signals tiny outputs (decisions, not text)</li>
-      <li>HN: 869 points, 278 comments</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">typesafe.ai/blog/introducing-system-one-models-and-jev</a></span>
-      <div class="kw"><span>structured output</span><span>latency</span><span>TypeSafe AI</span><span>Jev</span><span>automation</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">25</span>
-      <h2><a href="https://huggingface.co/papers/2609.06986" target="_blank" rel="noopener">HF Papers: continual-learning mechanisms compose for long-horizon memorization (270 upvotes)</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Top HuggingFace paper shows that separate continual-learning mechanisms (e.g. fast weights, replay, sparse updates) compose additively, letting models memorize and retain over far longer horizons than any single mechanism. Also trending: ScienceBuddy, a recursive-in-recursive self-improvement loop for interactive scientific agents.</p>
-    <ul class="points">
-      <li>Composition, not a single new mechanism, drives the gain</li>
-      <li>Relevant to agent memory beyond context windows</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://huggingface.co/papers/2609.06986" target="_blank" rel="noopener">huggingface.co/papers/2609.06986</a></span>
-      <div class="kw"><span>continual learning</span><span>memory</span><span>long-horizon</span><span>HF Papers</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">26</span>
-      <h2><a href="https://news.google.com/rss/search?q=%22early+Anthropic+hire%22+METR+rogue+agents+techcrunch&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">Early Anthropic hire and ex-METR COO launch startup to rein in rogue AI agents</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">TechCrunch profiles a new company from an early Anthropic employee and METR&#x27;s former COO building runtime controls for autonomous agents, timed to the RubyGems and wiki agent incidents that triggered the OpenAI congressional probe.</p>
-    <ul class="points">
-      <li>Agent containment is now a funded category</li>
-      <li>Founders bring both lab and evaluator-side experience</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://news.google.com/rss/search?q=%22early+Anthropic+hire%22+METR+rogue+agents+techcrunch&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" target="_blank" rel="noopener">news.google.com/rss/search?q=%22early+Anthropic+hire%22+METR+rogue+agents+techcrunch&amp;hl=en-US&amp;gl=US&amp;ceid=US:en</a></span>
-      <div class="kw"><span>agent safety</span><span>METR</span><span>startup</span><span>runtime controls</span></div>
-    </div>
-  </article>
-  <div class="cat-head">Hard tech</div>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">27</span>
-      <h2><a href="https://www.strix.ai/blog/baseten-harbor-github-pat-takeover" target="_blank" rel="noopener">Admin access to Baseten&#x27;s production GitHub in 25 minutes via a 3-year-old PAT in a public Harbor image</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Strix researchers found a GitHub personal access token baked into Docker build history in Baseten&#x27;s public Harbor registry, dating to March 2023 and still valid. It granted admin and push rights to production and GitOps repos. Root cause: secret passed as a build ARG instead of a secret mount.</p>
-    <ul class="points">
-      <li>Image layer history is a credential store attackers already scan</li>
-      <li>Use --mount=type=secret, rotate PATs, set expiry</li>
-      <li>HN: 239 points, 129 comments</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://www.strix.ai/blog/baseten-harbor-github-pat-takeover" target="_blank" rel="noopener">www.strix.ai/blog/baseten-harbor-github-pat-takeover</a></span>
-      <div class="kw"><span>supply chain</span><span>Docker</span><span>secrets</span><span>GitHub PAT</span><span>security</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">28</span>
-      <h2><a href="https://codyho.dev/blog/gpu-driver/" target="_blank" rel="noopener">Linux GPU driver for the M4 Mac mini in one month, with hypervisor tracing and LLM help</a></h2>
-      <span class="score"><span class="dot">●●●●</span><span class="off">○</span> <span>4/5</span></span>
-    </div>
-    <p class="summary">Cody Ho&#x27;s team built an OpenGL ES 3.0-conformant Mesa driver for Apple M4 and A18 Pro GPUs in about a month. They reverse-engineered the firmware ABI by tracing under a hypervisor and used LLMs for the repetitive decoding work while humans set direction, compressing what took the Asahi project years.</p>
-    <ul class="points">
-      <li>Hypervisor-based tracing beats static disassembly for firmware ABIs</li>
-      <li>LLM as reverse-engineering labour, not architect</li>
-      <li>HN: 185 points, 114 comments</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://codyho.dev/blog/gpu-driver/" target="_blank" rel="noopener">codyho.dev/blog/gpu-driver</a></span>
-      <div class="kw"><span>GPU driver</span><span>Apple M4</span><span>Mesa</span><span>reverse engineering</span><span>Linux</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">29</span>
-      <h2><a href="https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/" target="_blank" rel="noopener">Internet Archive tightens Wayback Machine bot defenses; legitimate users hitting 429s</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">The Internet Archive says waves of high-volume automated traffic forced new bot-detection and rate limiting, with rewritten 429 responses. Some real users are blocked; the Archive asks them to email info@archive.org with OS, browser and IP. Scrapers feeding AI training are the unnamed elephant.</p>
-    <ul class="points">
-      <li>Expect API and scripted access to break without allowlisting</li>
-      <li>HN: 419 points, 222 comments</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/" target="_blank" rel="noopener">blog.archive.org/2026/09/15/an-update-on-wayback-machine-access</a></span>
-      <div class="kw"><span>Internet Archive</span><span>rate limiting</span><span>bots</span><span>scraping</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">30</span>
-      <h2><a href="https://github.com/arnegiacomo/fugleramme" target="_blank" rel="noopener">Fugleramme: e-ink frame that hears birds and draws them as 1800s illustrations</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">Open-source project runs BirdNET-Go on a Raspberry Pi to identify garden birds by sound, then shows a matching public-domain 19th-century natural history plate from a curated set of 800+ on an e-ink panel. Refreshes only when the species changes, so the display stays power-frugal; also serves a web kiosk view.</p>
-    <ul class="points">
-      <li>Fully local inference, no cloud</li>
-      <li>HN: 1366 points, 183 comments</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://github.com/arnegiacomo/fugleramme" target="_blank" rel="noopener">github.com/arnegiacomo/fugleramme</a></span>
-      <div class="kw"><span>e-ink</span><span>BirdNET</span><span>Raspberry Pi</span><span>maker</span></div>
-    </div>
-  </article>
-  <article class="item">
-    <div class="item-top">
-      <span class="rank">31</span>
-      <h2><a href="https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/" target="_blank" rel="noopener">US data centers could burn more natural gas than Germany and Japan combined by 2035</a></h2>
-      <span class="score"><span class="dot">●●●</span><span class="off">○○</span> <span>3/5</span></span>
-    </div>
-    <p class="summary">TechCrunch summarises projections that AI data-center growth pushes US gas demand past the combined consumption of two G7 economies within a decade, while a companion piece documents local resistance in cities already scarred by heavy industry.</p>
-    <ul class="points">
-      <li>Gas, not renewables, is the marginal power source for AI buildout</li>
-      <li>Siting fights becoming a real schedule risk</li>
-    </ul>
-    <div class="foot">
-      <span class="src"><a href="https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/" target="_blank" rel="noopener">techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035</a></span>
-      <div class="kw"><span>data centers</span><span>energy</span><span>natural gas</span><span>infrastructure</span></div>
-    </div>
-  </article>
-  </section>
-  <div class="ai-foot">Daily News Report v3.2 (AI focus) · rolling 7-day window · latest 2026-09-22<br>
+  <div class="ai-foot">Daily News Report v3.2 (AI focus) · rolling 7-day window · latest 2026-09-23<br>
     Sources: Anthropic, OpenAI, Gemini/DeepMind, xAI, TechCrunch AI, The Verge AI, Simon Willison, Hacker News, HuggingFace</div>
 </div>
 <script>
